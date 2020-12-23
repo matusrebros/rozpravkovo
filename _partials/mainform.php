@@ -1,16 +1,16 @@
-<section class="home-form">
+<section class="main-form">
 			<div class="wrapper">
-				<img class="img-top-form" src="./assets/img/home-form.svg">
+				<img class="img-top-form" src="/assets/img/home-form.svg">
 				<div class="container">
 					<div class="content">
 						<h3>Máte záujem o stretnutie?</h3>
 						<p>V prípade záujmu nás neváhajte kontaktovať prostredníctvom formulára alebo telefonicky. Náš predajca si s Vami dohodne osobné stretnutie.</p>
 						<a href="#">
-							<img src="./assets/img/phone.svg">
+							<img src="/assets/img/phone.svg">
 							+421 911 123 456
 						</a>
 						<a href="#">
-							<img src="./assets/img/mail.svg">
+							<img src="/assets/img/mail.svg">
 							info@rozprávkovotatry.sk
 						</a>
 					</div>
@@ -25,5 +25,5 @@
 						<button type="submit">Odoslať</button>
 					</form>
 				</div>
-			</div class="wrapper">
+			</div>
 		</section>
