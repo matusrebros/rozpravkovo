@@ -13,7 +13,7 @@
 					<p>Rozprávkové bývanie pri slonovi v Tatranskej Lomnici</p>
 					<div class="hero-ctas">
 						<a class="orange-cta" href="/ponuka-nehnutelnosti">Nehnuteľnosti</a>
-						<a href="#">Chaty Rozprávkovo</a>
+						<a class="basic-cta" href="#">Chaty Rozprávkovo</a>
 					</div>
 				</div>
 			</div>
@@ -115,7 +115,7 @@
 		</section>
 
 		<section class="home-long-bg">
-			<div class="container">
+			<div class="container-long">
 				<section class="home-novinky">
 					<div class="container">
 						<h2>Novinky</h2>

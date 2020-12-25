@@ -2,6 +2,7 @@
 
 <main class="property-detail-main">
 	<div class="container detail-container">
+		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
 		<h2>Dvoj-Apart-Dom 1</h2>
 		<img class="divider" src="/assets/img/home-about-element.svg">
 		<section class="property-detail">
@@ -70,7 +71,7 @@
 					</div>
 					<div class="ctas">
 						<a href="#">Náhľad</a>
-						<a href="#">Viac</a>
+						<a href="/dvoj-apart-dom/1/prizemie">Viac</a>
 					</div>
 				</div>
 			</div>

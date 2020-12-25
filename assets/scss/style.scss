@@ -125,18 +125,23 @@ header {
 			flex-direction: column;
 			justify-content: center;
 			align-items: center;
-			margin-top: 16px;
+			margin-top: 8px;
 			box-shadow: 0px 0px 19px 0px rgba(0,0,0,0.3);
 
-			&:hover {
-				display: flex;
-			}
-
-			span {
+			a {
 				font-weight: 600;
 				color: $lightblue;
 				margin: 8px 0;
+				text-decoration: none;
+
+				&:hover {
+					color: $darkblue;
+				}
 			}
+		}
+
+		&:hover > .another-laguages {
+			display: flex;
 		}
 
 		.selected-language {
@@ -224,18 +229,34 @@ main {
 
 	.hero-ctas {
 		margin: 56px 0;
-		a {
+
+		.basic-cta {
 			color: #fff;
 			padding: 16px 56px;
 			margin: 0 12px;
 			border: 2px solid #fff;
 			font-weight: 700;
 			font-size: 1.2em;
+
+			&:hover {
+				color: $lightorange;
+				border: 2px solid $lightorange;
+			}
 		}
 
 		.orange-cta {
 			background: $lightorange;
 			border: 2px solid $lightorange;
+			color: #fff;
+			padding: 16px 56px;
+			margin: 0 12px;
+			font-weight: 700;
+			font-size: 1.2em;
+
+			&:hover {
+				background: $darkorange;
+				border: 2px solid $darkorange;
+			}
 		}
 	}
 }
@@ -310,6 +331,7 @@ main {
 		margin: 0 auto;
 
 		display: flex;
+		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
 	}
@@ -352,6 +374,11 @@ main {
 			padding: 16px 56px;
 			font-weight: 700;
 			margin-top: 32px;
+
+			&:hover {
+				border: 2px solid $lightorange;
+				color: $lightorange;
+			}
 		}
 	}
 }
@@ -382,6 +409,11 @@ main {
 		margin-top: 80px;
 		font-weight: 700;
 		font-size: 1.2em;
+
+		&:hover {
+			border: 2px solid $lightorange;
+			color: $lightorange;
+		}
 	}
 
 	.counter {
@@ -476,6 +508,11 @@ main {
 			border: 2px solid white;
 			font-weight: 700;
 			font-size: 1.2em;
+
+			&:hover {
+				color: #000;
+				border: 2px solid #000;
+			}
 		}
 	}
 
@@ -524,6 +561,11 @@ main {
 			padding: 16px 56px;
 			border: 2px solid black;
 			margin-top: 32px;
+
+			&:hover {
+				color: $lightorange;
+				border: 2px solid $lightorange;
+			}
 		}
 	}
 }
@@ -560,6 +602,11 @@ main {
 		padding: 16px 56px;
 		border: 2px solid black;
 		margin-bottom: 56px;
+
+		&:hover {
+			border: 2px solid $lightorange;
+			color: $lightorange;
+		}
 	}
 
 	.articles {
@@ -612,7 +659,7 @@ main {
 				background: $lightgreen;
 
 				&:hover {
-					background: darken($lightgreen, 10);
+					background: $darkgreen;
 				}
 			}
 
@@ -620,7 +667,7 @@ main {
 				background: $lightblue;
 
 				&:hover {
-					background: darken($lightblue, 10);
+					background: $darkblue;
 				}
 			}
 
@@ -628,7 +675,7 @@ main {
 				background: $lightorange;
 
 				&:hover {
-					background: darken($lightorange, 10);
+					background: $darkorange;
 				}
 			}
 		}
@@ -734,6 +781,7 @@ main {
 			color: #fff;
 			margin-top: 16px;
 			margin-bottom: 24px;
+			cursor: pointer;
 
 			a {
 				color: #fff;
@@ -750,6 +798,11 @@ main {
 			 color: #fff;
 			 background: $lightorange;
 			 padding: 16px 56px;
+			 cursor: pointer;
+
+			 &:hover {
+				background: $darkorange;
+			 }
 		 }
 	}
 }
@@ -809,6 +862,11 @@ main {
 				border: 2px solid #fff;
 				font-weight: 700;
 				font-size: 1.2em;
+
+				&:hover {
+					color: #000;
+					border: 2px solid #000;
+				}
 			}
 
 			span, a {
@@ -962,9 +1020,14 @@ footer {
 	background-image: url('../img/home-long-bg.svg');
 	background-repeat: no-repeat;
 	background-size: contain;
+	background-color: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%);
 
-	.container {
-		background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 15%, rgba(255,255,255,0) 85%, rgba(255,255,255,1) 100%);
+	.container-long {
+		background-image: url('../img/novinky-pattern-bg.svg');
+		background-repeat: no-repeat;
+		background-position: top center;
+		background-size: contain;
+		margin-top: 24px;
 	}
 }
 
@@ -993,6 +1056,11 @@ footer {
 		padding: 16px 56px;
 		border: 2px solid black;
 		margin-bottom: 56px;
+
+		&:hover {
+			border: 2px solid $lightorange;
+			color: $lightorange;
+		}
 	}
 
 	.homegallery {
@@ -1036,6 +1104,8 @@ footer {
 		background-size: cover;
 
 		transition: all 0.3s ease-in-out;
+
+		cursor: pointer;
 
 		&.card-dvoj {
 			background-image: url('../img/home-gallery.jpg');
@@ -1132,10 +1202,6 @@ footer {
 	.main-form {
 		margin-top: 120px;
 	}
-}
-
-.main-kontakt {
-
 }
 
 .o-projekte-main {
@@ -1255,6 +1321,10 @@ footer {
 			background: $lightorange;
 			padding: 16px 56px;
 			font-weight: 700;
+
+			&:hover {
+				background: $darkorange;
+			}
 		}
 
 		.align-right {
@@ -1309,6 +1379,11 @@ footer {
 		margin-top: 80px;
 		font-weight: 700;
 		font-size: 1.2em;
+
+		&:hover {
+			color: $lightorange;
+			border: 2px solid $lightorange;
+		}
 	}
 
 	.aktivity-wrapper {
@@ -1471,6 +1546,11 @@ footer {
 				&:first-child {
 					margin-right: 40px;
 				}
+
+				&:hover {
+					border: 2px solid $lightorange;
+					color: $lightorange;
+				}
 			}
 		}
 	}
@@ -1568,6 +1648,7 @@ footer {
 	.podorys-img {
 		width: 100%;
 		max-width: 600px;
+		margin: 0 56px;
 	}
 
 	.container {
@@ -1581,6 +1662,7 @@ footer {
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin: 0 56px;
 
 		span {
 			font-size: 1.5em;
@@ -1599,6 +1681,28 @@ footer {
 
 			table {
 				margin: 16px;
+			}
+
+			.parameters {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+
+				ul, img {
+					padding: 24px;
+				}
+
+				ul {
+					margin-right: 56px;
+					li {
+						font-size: 1.2em;
+						margin: 32px 0;
+
+						strong {
+							font-size: 0.9em;
+						}
+					}
+				}
 			}
 
 			.severka {
@@ -1631,7 +1735,156 @@ footer {
 				font-weight: 700;
 				font-size: 1.2em;
 				margin: 0 16px;
+
+				&:hover {
+					color: $lightorange;
+					border: 2px solid $lightorange;
+				}
 			}
+		}
+	}
+}
+
+.kontakt-wrapper {
+	margin-top: 129px;
+	padding: 120px 0;
+	background-image: url("../img/main-bg.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+
+	.main-form {
+		margin-top: 120px;
+	}
+
+	h2 {
+		font-family: "Pacifico",cursive;
+		font-size: 2.5em;
+		text-align: center;
+	}
+
+	p {
+		font-weight: 400;
+		text-align: center;
+		max-width: 600px;
+		margin-bottom: 56px;
+
+		a {
+			text-decoration: underline;
+		}
+	}
+
+	.divider {
+		margin: 56px 0;
+	}
+
+	.contact-box {
+		background: #ffffff;
+		box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.34);
+		padding: 24px 56px;
+		margin-bottom: 120px;
+
+		span {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			padding: 32px;
+
+			img {
+				margin-bottom: 32px;
+			}
+
+			a {
+				font-size: 1.5em;
+				font-weight: 700;
+			}
+		}
+	}
+
+	.sellers {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 120px;
+	}
+
+	.seller {
+		background: #ffffff;
+		box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.34);
+
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		padding: 56px 80px;
+		margin: 0 32px;
+
+		strong {
+			font-size: 1.2em;
+			margin: 32px 0;
+		}
+
+		.item {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin-bottom: 24px;
+
+			img {
+				margin-right: 24px;
+				width: 30px;
+			}
+
+			a, span {
+				font-size: 1.1em;
+			}
+		}
+	}
+}
+
+.main-kontakt {
+	.container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+.backButton {
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin: 56px;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.8;
+	}
+}
+
+.floor-subpage {
+	margin-top: 129px;
+	padding: 120px 0;
+	background-image: url("../img/main-bg.svg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: top center;
+
+	.top-section {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+
+		h2 {
+			font-family: $pacifico;
+			font-size: 2.5em;
+		}
+
+		img {
+			margin: 56px 0;
 		}
 	}
 }

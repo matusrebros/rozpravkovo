@@ -3,6 +3,7 @@
 <main>
 	<section class="properties">
 		<div class="container">
+		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
 			<h2>Dvoj-Apart-Dom</h2>
 			<img class="divider" src="/assets/img/home-about-element.svg">
 			<div class="aparts">

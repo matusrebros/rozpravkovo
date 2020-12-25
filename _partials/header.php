@@ -45,8 +45,8 @@
 		<div class="language-selector">
 			<span class="selected-language">SK</span>
 			<div class="another-laguages">
-				<span>EN</span>
-				<span>PL</span>
+				<a href="#">EN</a>
+				<a href="#">PL</a>
 			</div>
 		</div>
 	</header>
