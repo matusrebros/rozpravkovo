@@ -10,7 +10,7 @@
 						<h1>Aj rozprávka sa môže stať skutočnosťou.</h1>
 						<img src="/assets/img/main-heading-arrow-right.svg">
 					</div>
-					<p>Rozprávkové bývanie pri slonovi v Tatranskej Lomnici</p>
+					<p>Rozprávkové bývanie v Tatranskej Lomnici</p>
 					<div class="hero-ctas">
 						<a class="orange-cta" href="/ponuka-nehnutelnosti">Nehnuteľnosti</a>
 						<a class="basic-cta" href="#">Chaty Rozprávkovo</a>
@@ -58,25 +58,25 @@
 		<section class="home-counters">
 			<div class="container">
 				<div class="counters">
-					<a href="/ponuka-nehnutelnosti">
+					<a href="/apartmany">
 						<div class="counter">
 							<strong>30</strong>
 							<span>Apartmánov</span>
 						</div>
 					</a>
-					<a href="#">
+					<a href="/dvoj-apart-dom">
 						<div class="counter">
 							<strong class="special">2</strong>
 							<span>Dvoj-apart-domy</span>
 						</div>
 					</a>
-					<a href="#">
+					<a href="/apart-domy">
 						<div class="counter">
 							<strong>3</strong>
 							<span>Apart-domy</span>
 						</div>
 					</a>
-					<a href="#">
+					<a href="/chaty">
 						<div class="counter">
 							<strong>3</strong>
 							<span>Chaty</span>
@@ -102,7 +102,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="home-aktivity">
+		<section class="home-aktivity homehome-aktivity">
 			<div class="container">
 				<div class="content">
 					<h2>Aktivity</h2>
@@ -207,7 +207,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="home-partneri">
+		<!-- <section class="home-partneri">
 			<div class="container">
 				<h3>Partneri</h3>
 				<img class="divider" src="/assets/img/partneri-pattern.svg">
@@ -219,7 +219,7 @@
 					<img src="/assets/img/sample-logo-company.png">
 				</div>
 			</div>
-		</section>
+		</section> -->
 	</main>
 
 <?php require_once '_partials/footer.php'; ?>

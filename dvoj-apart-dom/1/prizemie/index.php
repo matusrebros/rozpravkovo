@@ -7,12 +7,12 @@
 	</section>
 	<section class="floor-detail">
 		<div class="container">
-			<img class="podorys-img" src="/assets/img/prizemie-img.jpg">
+			<a href="/dvoj-apart-dom/1/prizemie/A1-02/"><img class="podorys-img" src="/assets/img/prizemie-img.jpg"></a>
 			<div class="content">
 				<span>Prízemie</span>
 				<h3>Apartmán A1-02</h3>
 				<img class="floor-divider" src="/assets/img/home-about-element.svg">
-				<div class="table">
+				<a href="/dvoj-apart-dom/1/prizemie/A1-02/" class="table">
 					<div class="parameters">
 						<img src="/assets/img/floor-detail-img.jpg">
 						<ul>
@@ -26,10 +26,10 @@
 						<p>Severka:</p>
 						<img src="/assets/img/severka.svg">
 					</div>
-				</div>
+				</a>
 				<div class="ctas">
-					<a href="#">Náhľad</a>
-					<a href="/dvoj-apart-dom/1/prizemie">Viac</a>
+					<a class="special-cta-green special-cta-orange" href="/dvoj-apart-dom/1/prizemie/A1-02/">Vybrať</a>
+					<a class="special-cta-gray" href="#">Náhľad</a>
 				</div>
 			</div>
 		</div>
@@ -40,7 +40,7 @@
 				<span>Prízemie</span>
 				<h3>Apartmán A1-02</h3>
 				<img class="floor-divider" src="/assets/img/home-about-element.svg">
-				<div class="table">
+				<a href="#" class="table">
 					<div class="parameters">
 						<img src="/assets/img/floor-detail-img.jpg">
 						<ul>
@@ -54,13 +54,13 @@
 						<p>Severka:</p>
 						<img src="/assets/img/severka.svg">
 					</div>
-				</div>
+				</a>
 				<div class="ctas">
-					<a href="#">Náhľad</a>
-					<a href="/dvoj-apart-dom/1/prizemie">Viac</a>
+					<a class="special-cta-green special-cta-orange" href="/dvoj-apart-dom/1/prizemie">Vybrať</a>
+					<a class="special-cta-gray" href="#">Náhľad</a>
 				</div>
 			</div>
-			<img class="podorys-img" src="/assets/img/prizemie-img.jpg">
+			<a href="#"><img class="podorys-img" src="/assets/img/prizemie-img.jpg"></a>
 		</div>
 	</section>
 	<section class="floor-detail">
@@ -86,8 +86,8 @@
 					</div>
 				</div>
 				<div class="ctas">
-					<a href="#">Náhľad</a>
-					<a href="/dvoj-apart-dom/1/prizemie">Viac</a>
+					<a class="special-cta-green special-cta-orange" href="/dvoj-apart-dom/1/prizemie">Vybrať</a>
+					<a class="special-cta-gray" href="#">Náhľad</a>
 				</div>
 			</div>
 		</div>

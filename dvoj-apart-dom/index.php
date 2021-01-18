@@ -10,7 +10,8 @@
 				<div class="apart">
 					<div class="content">
 						<img class="element" src="/assets/img/property-element.svg">
-						<h4>Dvoj - Apart - Dom 1</h4>
+						<h4>Dvoj - Apartdom E</h4>
+						<h4>Názov</h4>
 						<div class="parameters">
 							<ul class="align-right">
 								<li>Počet podlaží:</li>
@@ -24,16 +25,21 @@
 							</ul>
 						</div>
 						<div class="ctas">
-							<a href="/dvoj-apart-dom/1">Viac</a>
-							<a href="#">Mapa</a>
+							<a class="special-cta-green special-cta-orange" href="/dvoj-apart-dom/1">Vybrať</a>
+							<div class="previewgallery">
+								<a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Mapa</a>
+							</div>
 						</div>
 					</div>
-					<img class="image-property" src="/assets/img/apart-nahlad.jpg">
+					<a class="img-link" href="/dvoj-apart-dom/1">
+						<img class="image-property" src="/assets/img/apart-nahlad.jpg">
+					</a>
 				</div>
 				<div class="apart">
 					<div class="content">
 						<img class="element" src="/assets/img/property-element.svg">
-						<h4>Dvoj - Apart - Dom 1</h4>
+						<h4>Dvoj - Apartdom D</h4>
+						<h4>Názov</h4>
 						<div class="parameters">
 							<ul class="align-right">
 								<li>Počet podlaží:</li>
@@ -47,11 +53,15 @@
 							</ul>
 						</div>
 						<div class="ctas">
-							<a href="#">Viac</a>
-							<a href="#">Mapa</a>
+							<a class="special-cta-green special-cta-orange" href="#">Vybrať</a>
+							<div class="previewgallerysecond">
+								<a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Mapa</a>
+							</div>
 						</div>
 					</div>
-					<img class="image-property" src="/assets/img/apart-nahlad.jpg">
+					<a class="img-link" href="/dvoj-apart-dom/1">
+						<img class="image-property" src="/assets/img/apart-nahlad.jpg">
+					</a>
 				</div>
 			</div>
 		</div>

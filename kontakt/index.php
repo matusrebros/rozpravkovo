@@ -3,18 +3,23 @@
 <main class="kontakt-wrapper">
 	<section class="main-kontakt">
 		<div class="container">
-			<h2>Kontakt</h2>
-			<img class="divider" src="/assets/img/partneri-pattern.svg">
-			<p>Neváhajte nás kontaktovať.<br>Pomôžeme Vám na ceste k Vášmu <a href="#">Rozprávkovému bývaniu</a>.</p>
-			<div class="contact-box">
-				<span>
-					<img src="/assets/img/prange-phone.svg">
-					<a href="#">+421 911 123 456</a>
-				</span>
-				<span>
-					<img src="/assets/img/green-mail.svg">
-					<a href="mailto:info@rozpravkovotatry.sk">info@rozprávkovotatry.sk</a>
-				</span>
+			<div class="kontakt-top-section">
+				<div class="left">
+					<h2>Kontakt</h2>
+					<img class="divider" src="/assets/img/partneri-pattern.svg">
+					<p>Neváhajte nás kontaktovať.<br>Pomôžeme Vám na ceste k Vášmu <a href="#">Rozprávkovému bývaniu</a>.</p>
+				</div>
+				<div class="contact-box">
+					<img src="/assets/img/kontakt-element-top.svg">
+					<span>
+						<img src="/assets/img/prange-phone.svg">
+						<a href="#">+421 911 123 456</a>
+					</span>
+					<span>
+						<img src="/assets/img/green-mail.svg">
+						<a href="mailto:info@rozpravkovotatry.sk">info@rozprávkovotatry.sk</a>
+					</span>
+				</div>
 			</div>
 			<h2>Kontaktujte našich predajcov</h2>
 			<img class="divider" src="/assets/img/home-about-element.svg">

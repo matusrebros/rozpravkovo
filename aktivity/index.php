@@ -1,7 +1,7 @@
 <?php require_once '../_partials/header.php'; ?>
 
 <main class="aktivity-main">
-	<section class="home-aktivity">
+	<section class="home-aktivity suppage-aktivity">
 		<div class="container">
 			<div class="content">
 				<h2>Aktivity</h2>
@@ -11,14 +11,16 @@
 		</div>
 	</section>
 	<section class="home-long-bg">
+		<div class="element-aktivity-wrapper"><img class="element-aktivity" src="/assets/img/aktivity-element-top.svg"></div>
 		<div class="container">
 			<section class="aktivity-section">
 				<div class="container">
 					<h2>Tatranský magický trojuholník</h2>
 					<img class="divider" src="/assets/img/partneri-pattern.svg">
+					<img class="aktivity-img" src="/assets/img/aktivity-top-img.jpg">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat diam.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat diam.</p>
 
-					<div class="two-column-section">
+					<div class="two-column-section orange-twocolumn">
 						<div class="left">
 							<img src="/assets/img/aktivity-vysoke-tatry.jpg">
 						</div>
@@ -29,7 +31,7 @@
 						</div>
 					</div>
 
-					<div class="two-column-section">
+					<div class="two-column-section blue-twocolumn">
 						<div class="left align-right">
 							<h3>Pieniny</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
@@ -40,7 +42,7 @@
 						</div>
 					</div>
 
-					<div class="two-column-section last-twos">
+					<div class="two-column-section last-twos green-twocolumn">
 						<div class="left">
 							<img src="/assets/img/aktivity-slovensky-raj.jpg">
 						</div>

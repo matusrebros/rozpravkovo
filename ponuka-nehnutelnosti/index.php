@@ -8,13 +8,13 @@
 				<img src="/assets/img/dvojdom-element.svg">
 			</section>
 		</a>
-		<a class="ponuka-card card-apart" href="#">
+		<a class="ponuka-card card-apart" href="/apart-dom">
 			<section class="apart-dom">
 				<span>Apart-Dom</span>
 				<img src="/assets/img/apartdom-element.svg">
 			</section>
 		</a>
-		<a class="ponuka-card card-chata" href="#">
+		<a class="ponuka-card card-chata" href="/chaty">
 			<section class="chata">
 				<span>Chata</span>
 				<img src="/assets/img/chata-element.svg">
@@ -23,4 +23,8 @@
 	</div>
 </main>
 
-<?php require_once '../_partials/footer.php'; ?>
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+	<script src="/assets/js/script.js"></script>
+
+</body>
+</html>

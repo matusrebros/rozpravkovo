@@ -3,7 +3,8 @@
 <main class="property-detail-main">
 	<div class="container detail-container">
 		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
-		<h2>Dvoj-Apart-Dom 1</h2>
+		<small class="headliner-before">Dvoj-Apart Dom E</small>
+		<h2>Horec</h2>
 		<img class="divider" src="/assets/img/home-about-element.svg">
 		<section class="property-detail">
 			<div class="content">
@@ -28,12 +29,15 @@
 		<img class="dividertwo" src="/assets/img/property-element.svg">
 		<section class="floor-detail">
 			<div class="container">
-				<img class="podorys-img" src="/assets/img/podorys.svg">
+				<a class="podorys-link" href="/dvoj-apart-dom/1/prizemie">
+					<img class="podorys-img" src="/assets/img/podorys.svg">
+				</a>
 				<div class="content">
 					<span>Dvoj - Apart - Dom 1</span>
+					<small class="floor-headline">Horec</small>
 					<h3>Prízemie</h3>
 					<img class="floor-divider" src="/assets/img/home-about-element.svg">
-					<div class="table">
+					<a href="/dvoj-apart-dom/1/prizemie" class="table">
 						<table>
 							<thead>
 							  <tr>
@@ -65,13 +69,15 @@
 							</tbody>
 						</table>
 						<div class="severka">
-							<p>Severka:</p>
-							<img src="/assets/img/severka.svg">
+							<p>Orientácia:</p>
+							<img src="/assets/img/orientacia.svg">
 						</div>
-					</div>
+					</a>
 					<div class="ctas">
-						<a href="#">Náhľad</a>
-						<a href="/dvoj-apart-dom/1/prizemie">Viac</a>
+						<a class="special-cta-green special-cta-orange" href="/dvoj-apart-dom/1/prizemie">Vybrať</a>
+						<div class="previewdvoj">
+							<a class="special-cta-gray" href="/assets/img/podorys.svg">Náhľad</a>
+						</div>
 					</div>
 				</div>
 			</div>
@@ -80,7 +86,8 @@
 			<div class="container">
 				<div class="content">
 					<span>Dvoj - Apart - Dom 1</span>
-					<h3>Prízemie</h3>
+					<small class="floor-headline">Horec</small>
+					<h3>1. Poschodie</h3>
 					<img class="floor-divider" src="/assets/img/home-about-element.svg">
 					<div class="table">
 						<table>
@@ -114,24 +121,25 @@
 							</tbody>
 						</table>
 						<div class="severka">
-							<p>Severka:</p>
-							<img src="/assets/img/severka.svg">
+							<p>Orientácia:</p>
+							<img src="/assets/img/orientacia.svg">
 						</div>
 					</div>
 					<div class="ctas">
-						<a href="#">Náhľad</a>
-						<a href="#">Viac</a>
+						<a class="special-cta-green special-cta-orange" href="#">Vybrať</a>
+						<a class="special-cta-gray" href="/assets/img/podorys.png">Náhľad</a>
 					</div>
 				</div>
-				<img class="podorys-img" src="/assets/img/podorys.svg">
+				<a class="podorys-link" href="#"><img class="podorys-img" src="/assets/img/podorys.svg"></a>
 			</div>
 		</section>
 		<section class="floor-detail">
 			<div class="container">
-				<img class="podorys-img" src="/assets/img/podorys.svg">
+				<a class="podorys-link" href="#"><img class="podorys-img" src="/assets/img/podorys.svg"></a>
 				<div class="content">
 					<span>Dvoj - Apart - Dom 1</span>
-					<h3>Prízemie</h3>
+					<small class="floor-headline">Horec</small>
+					<h3>2. Poschodie</h3>
 					<img class="floor-divider" src="/assets/img/home-about-element.svg">
 					<div class="table">
 						<table>
@@ -165,15 +173,39 @@
 							</tbody>
 						</table>
 						<div class="severka">
-							<p>Severka:</p>
-							<img src="/assets/img/severka.svg">
+							<p>Orientácia:</p>
+							<img src="/assets/img/orientacia.svg">
 						</div>
 					</div>
 					<div class="ctas">
-						<a href="#">Náhľad</a>
-						<a href="#">Viac</a>
+						<a class="special-cta-green special-cta-orange" href="#">Vybrať</a>
+						<a class="special-cta-gray" href="/assets/img/suteren.png">Náhľad</a>
 					</div>
 				</div>
+			</div>
+		</section>
+		<section class="floor-detail">
+			<div class="container">
+				<div class="content">
+					<span>Dvoj - Apart - Dom 1</span>
+					<small class="floor-headline">Horec</small>
+					<h3>Suterén</h3>
+					<img class="floor-divider" src="/assets/img/home-about-element.svg">
+					<div class="table special-table">
+						<div class="special-table-container">
+							<p>V prípade záujmu o garážové státie nás kontaktujte.</p>
+							<a href="#">
+								<img src="/assets/img/phone-orange.svg">
+								<span>+421 911 123 456</span>
+							</a>
+							<a href="#">
+								<img src="/assets/img/mail-green.svg">
+								<span>info@rozprávkovotatry.sk</span>
+							</a>
+						</div>
+					</div>
+				</div>
+				<img class="podorys-img" src="/assets/img/suteren.png">
 			</div>
 		</section>
 	</div>

@@ -80,7 +80,7 @@
 		</div>
 	</section>
 
-	<section class="home-aktivity">
+	<section class="home-aktivity homehome-aktivity">
 		<div class="container">
 			<div class="content">
 				<h2>Aktivity</h2>

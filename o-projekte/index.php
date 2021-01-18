@@ -5,7 +5,9 @@
 		<div class="container">
 			<h2>O Projekte</h2>
 			<img class="divider" src="/assets/img/partneri-pattern.svg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+				dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+				incididunt ut labore et dolore magna aliqua.</p>
 			<div class="advantages">
 				<div class="advantage">
 					<img src="/assets/img/advantage1.svg">
@@ -39,68 +41,74 @@
 		</div>
 	</section>
 
-	<section class="home-counters">
-		<h2>Nehnuteľnosti</h2>
-		<img class="divider" src="/assets/img/home-about-element.svg">
-		<div class="container">
-			<div class="counters">
-				<a href="#">
-					<div class="counter">
-						<strong>30</strong>
-						<span>Apartmánov</span>
-					</div>
-				</a>
-				<a href="#">
-					<div class="counter">
-						<strong class="special">2</strong>
-						<span>Dvoj-apart-domy</span>
-					</div>
-				</a>
-				<a href="#">
-					<div class="counter">
-						<strong>3</strong>
-						<span>Apart-domy</span>
-					</div>
-				</a>
-				<a href="#">
-					<div class="counter">
-						<strong>3</strong>
-						<span>Chaty</span>
-					</div>
-				</a>
+	<div class="oprojekte-big-bg">
+		<section class="home-counters suppage-oprojekte-counters">
+			<h2>Nehnuteľnosti</h2>
+			<img class="divider" src="/assets/img/home-about-element.svg">
+			<div class="container">
+				<div class="counters oprojekte-counter">
+					<a href="/apartmany">
+						<div class="counter">
+							<strong>30</strong>
+							<span>Apartmánov</span>
+						</div>
+					</a>
+					<a href="/dvoj-apart-dom">
+						<div class="counter">
+							<strong class="special">2</strong>
+							<span>Dvoj-apart-domy</span>
+						</div>
+					</a>
+					<a href="/apart-domy">
+						<div class="counter">
+							<strong>3</strong>
+							<span>Apart-domy</span>
+						</div>
+					</a>
+					<a href="/chaty">
+						<div class="counter">
+							<strong>3</strong>
+							<span>Chaty</span>
+						</div>
+					</a>
+				</div>
 			</div>
-			<img class="main-img" src="/assets/img/nehnutelnosti-image.jpg">
-		</div>
-	</section>
+			<a href="/ponuka-nehnutelnosti">
+				<img class="main-img" src="/assets/img/o-projekte-main-podorys.png">
+			</a>
+		</section>
 
-	<section class="home-galeria">
-		<div class="container">
-			<h2>Galéria</h2>
-			<img class="divider" src="/assets/img/home-galery-element.svg">
-			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat diam.</p>
-			<a class="linkec" href="/galeria">Viac</a>
-			<div class="homegallery">
-				<a href="/assets/img/home-gallery.jpg">
-					<img src="/assets/img/home-gallery.jpg" alt="" title=""/>
-				</a>
-				<a href="/assets/img/home-gallery02.jpg">
-					<img src="/assets/img/home-gallery02.jpg" alt="" title=""/>
-				</a>
-				<a href="/assets/img/home-gallery03.jpg">
-					<img src="/assets/img/home-gallery03.jpg" alt="" title=""/>
-				</a>
-				<a href="/assets/img/home-gallery03.jpg">
-					<img src="/assets/img/home-gallery03.jpg" alt="" title=""/>
-				</a>
-				<a href="/assets/img/home-gallery02.jpg">
-					<img src="/assets/img/home-gallery02.jpg" alt="" title=""/>
-				</a>
-				<a href="/assets/img/home-gallery.jpg">
-					<img src="/assets/img/home-gallery.jpg" alt="" title=""/>
-				</a>
+		<section class="home-galeria">
+			<div class="container">
+				<h2>Galéria</h2>
+				<img class="divider" src="/assets/img/home-galery-element.svg">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+					dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat
+					diam.</p>
+				<a class="linkec" href="/galeria">Viac</a>
+				<div class="homegallery">
+					<a href="/assets/img/home-gallery.jpg">
+						<img src="/assets/img/home-gallery.jpg" alt="" title="" />
+					</a>
+					<a href="/assets/img/home-gallery02.jpg">
+						<img src="/assets/img/home-gallery02.jpg" alt="" title="" />
+					</a>
+					<a href="/assets/img/home-gallery03.jpg">
+						<img src="/assets/img/home-gallery03.jpg" alt="" title="" />
+					</a>
+					<a href="/assets/img/home-gallery03.jpg">
+						<img src="/assets/img/home-gallery03.jpg" alt="" title="" />
+					</a>
+					<a href="/assets/img/home-gallery02.jpg">
+						<img src="/assets/img/home-gallery02.jpg" alt="" title="" />
+					</a>
+					<a href="/assets/img/home-gallery.jpg">
+						<img src="/assets/img/home-gallery.jpg" alt="" title="" />
+					</a>
+				</div>
 			</div>
-		</div>
-	</section>
+		</section>
+	</div>
 
 	<section class="home-aktivity">
 		<div class="container">
@@ -108,7 +116,9 @@
 				<h2>Aktivity</h2>
 				<img class="divider" src="/assets/img/home-about-element.svg">
 				<strong>Okolie nabité Rozprávkovými aktivitami</strong>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat diam.</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+					et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at
+					volutpat diam.</p>
 				<a href="/aktivity">Viac</a>
 			</div>
 		</div>
