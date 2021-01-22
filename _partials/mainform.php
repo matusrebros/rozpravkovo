@@ -20,7 +20,7 @@
 						<input type="number" placeholder="Tel. č.">
 						<label>
 							<input type="checkbox">
-							<span>Súhlasím so spracovaním <a> osobných údajov</a></spa>
+							<span>Súhlasím so spracovaním <a id="gdprshow">osobných údajov</a></spa>
 						</label>
 						<button type="submit">Odoslať</button>
 					</form>
@@ -59,6 +59,7 @@
 			const gdprpopup = document.getElementById('gdprpopup')
 			const thankyoucloser = document.getElementById('thankyoucloser')
 			const gdprcloser = document.getElementById('gdprcloser')
+			const gdprshow = document.getElementById('gdprshow')
 
 			thankyoucloser.addEventListener('click', () => {
 				mainformpopup.classList.remove('active')
@@ -66,5 +67,9 @@
 
 			gdprcloser.addEventListener('click', () => {
 				gdprpopup.classList.remove('active')
+			})
+
+			gdprshow.addEventListener('click', () => {
+				gdprpopup.classList.add('active')
 			})
 		</script>
