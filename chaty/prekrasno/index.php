@@ -2,7 +2,8 @@
 
 <main class="property-detail-main">
 	<div class="container detail-container">
-		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
+	<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton hoverbackbutton">
+		<img onclick="history.back()" src="/assets/img/back-arrow-hover.svg" class="backButton">
 		<small class="headliner-before">Chata CH1</small>
 		<h2>Prekrásnô</h2>
 		<img class="divider" src="/assets/img/partneri-pattern.svg">
@@ -137,10 +138,10 @@
 			<div class="prices-section forever-rent">
 				<div class="container">
 					<span>CENA <q>PRENÁJOM NAVEKY</q></span>
-					<a class="cta" href="#">Time Sharing</a>
-					<strong>15 000 EUR</strong>
+					<a class="cta" href="http://localhost:1488/prenajom-naveky">Time Sharing</a>
+					<strong>15 000 €</strong>
 					<p>Načo kupovať za státisíce, keď si môžeš prenajať naveky za tisíce...</p>
-					<a class="side-cta" href="#">Viac o Sharingu</a>
+					<a class="side-cta" href="http://localhost:1488/prenajom-naveky">Viac o Sharingu</a>
 				</div>
 			</div>
 		</section>

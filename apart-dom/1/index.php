@@ -2,7 +2,8 @@
 
 <main class="property-detail-main">
 	<div class="container detail-container">
-		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
+		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton hoverbackbutton">
+		<img onclick="history.back()" src="/assets/img/back-arrow-hover.svg" class="backButton">
 		<small class="headliner-before">Apart Dom E</small>
 		<h2>Horec</h2>
 		<img class="divider" src="/assets/img/home-galery-element.svg">
@@ -73,7 +74,7 @@
 					</a>
 					<div class="ctas">
 						<a class="special-cta-green special-cta-blue" href="/apart-dom/1/prizemie">Vybrať</a>
-						<a class="special-cta-gray" href="#">Náhľad</a>
+						<div class="dvojpreviewone"><a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Náhľad</a></div>
 					</div>
 				</div>
 			</div>
@@ -123,7 +124,7 @@
 					</a>
 					<div class="ctas">
 						<a class="special-cta-green special-cta-blue" href="#">Vybrať</a>
-						<a class="special-cta-gray" href="#">Náhľad</a>
+						<div class="dvojpreviewtwo"><a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Náhľad</a></div>
 					</div>
 				</div>
 				<a class="podorys-link" href="#"><img class="podorys-img" src="/assets/img/podorys.svg"></a>
@@ -175,7 +176,7 @@
 					</a>
 					<div class="ctas">
 						<a class="special-cta-green special-cta-blue" href="#">Vybrať</a>
-						<a class="special-cta-gray" href="#">Náhľad</a>
+						<div class="dvojpreviewthree"><a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Náhľad</a></div>
 					</div>
 				</div>
 			</div>

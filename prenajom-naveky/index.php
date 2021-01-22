@@ -1,4 +1,64 @@
-<?php require_once '../_partials/header.php'; ?>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rozpravkovo</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="/assets/css/simple-lightbox.min.css">
+	<link rel="stylesheet" href="/assets/css/style.min.css">
+</head>
+<body>
+
+	<header id="mainheader">
+		<div id="mainbanner" class="announcement-banner">
+			<div class="container-banner">
+				<strong>Už v Predaji!</strong>
+				<span id="bannercloser">X</span>
+			</div>
+		</div>
+		<div class="header-container">
+			<a href="/">
+				<img src="/assets/img/main-logo.svg">
+			</a>
+			<nav>
+				<ul>
+					<li>
+						<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+					</li>
+					<li>
+						<a class="active" href="/prenajom-naveky">Prenájom Naveky</a>
+						<span>Time Sharing</span>
+					</li>
+					<li>
+						<a href="/aktivity">Aktivity</a>
+					</li>
+					<li>
+						<a href="/o-projekte">O projekte</a>
+					</li>
+					<li>
+						<a href="/novinky">Novinky</a>
+					</li>
+					<li>
+						<a href="/galeria">Galéria</a>
+					</li>
+					<li>
+						<a href="/kontakt">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="language-selector">
+				<span class="selected-language">SK</span>
+				<div class="another-laguages">
+					<a href="#">EN</a>
+					<a href="#">PL</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
 
 <main id="timesharing">
 	<section class="prenajom-top">
@@ -14,7 +74,7 @@
 
 		<p>Inými slovami <strong>„Prenájmom naveky“</strong> bez starostí na vyhradený čas v roku s jednorázovou úhradou teraz.</p>
 
-		<a href="#">Mám záujem o Time Sharing</a>
+		<a href="#pripravenySharovat">Mám záujem o Time Sharing</a>
 	</section>
 	<section class="prenajom-benefity">
 		<h2>Benefity Time Sharingu</h2>
@@ -48,7 +108,7 @@
 				<span>Možnosť predaja celej Zmluvy</span>
 			</div>
 		</div>
-		<a href="#">Mám záujem o Time Sharing</a>
+		<a href="#pripravenySharovat">Mám záujem o Time Sharing</a>
 	</section>
 	<section class="prenajom-unas">
 		<h2>Time Sharing u Nás</h2>
@@ -74,7 +134,7 @@
 			<img src="/assets/img/prenajom-element.svg">
 			<p>Chaty sú v štandarde drevo, kameň, sklo, s luxusným vybavením, všetok nábytok je vyrobený z masívu.</p>
 		</div>
-		<a href="#">Mám záujem o Time Sharing</a>
+		<a href="#pripravenySharovat">Mám záujem o Time Sharing</a>
 	</section>
 
 	<section class="kvalifikacia-prenajom">
@@ -82,19 +142,28 @@
 		<img src="/assets/img/kvalifikacia.svg">
 		<p>Time sharingové ubytovanie má vo svete svoje všeobecné parametre. U nás v Rozprávkove Tatry spĺňame <strong>všetky parametre svetového Time sharingu</strong> - Prenájmu naveky:</p>
 		<ul>
-			<li>parametre luxusného ubytovania</li>
-			<li>obchod s potravinami</li>
-			<li>reštauračné služby</li>
-			<li>len kvalitné stavebné materiály</li>
-			<li>drogéria</li>
-			<li>transfer na letisko</li>
-			<li>kuchynka s komplexným vybavením</li>
-			<li>recepcia</li>
-			<li>cez zimu zabezpečený ski bus k zjazdovkám</li>
-			<li>kúpeľňa s kvalitným vybavením </li>
-			<li>zábavné centrum pre deti</li>
+			<div class="kvalifikovany-divisions">
+				<li><span>parametre luxusného ubytovania</span></li>
+				<li><span>len kvalitné stavebné materiály</span></li>
+				<li><span>kuchynka s komplexným vybavením</span></li>
+				<li><span>kúpeľňa s kvalitným vybavením</span></li>
+			</div>
+
+			<div class="kvalifikovany-divisions">
+				<li><span>obchod s potravinami</span></li>
+				<li><span>drogéria</span></li>
+				<li><span>recepcia</span></li>
+				<li><span>zábavné centrum pre deti</span></li>
+			</div>
+
+			<div class="kvalifikovany-divisions">
+				<li><span>reštauračné služby</span></li>
+				<li><span>transfer na letisko</span></li>
+				<li><span>cez zimu zabezpečený ski bus k zjazdovkám</spa></li>
+			</div>
+
 		</ul>
-		<a href="#">Mám záujem o Time Sharing</a>
+		<a href="#pripravenySharovat">Mám záujem o Time Sharing</a>
 	</section>
 
 	<section class="pripraveny-sherovat">
@@ -107,18 +176,21 @@
 					<strong>Dvoj-Apart-Dom</strong>
 					<img src="/assets/img/dvojdom-element.svg">
 				</div>
+				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
 			</div>
 			<div class="nehnutelnost-prenajom apart-prenajom">
 				<div class="container">
 					<strong>Apart-Dom</strong>
 					<img src="/assets/img/apartdom-element.svg">
 				</div>
+				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
 			</div>
 			<div class="nehnutelnost-prenajom chata-prenajom">
 				<div class="container">
 					<strong>Chata</strong>
 					<img src="/assets/img/chata-element.svg">
 				</div>
+				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
 			</div>
 		</div>
 	</section>
@@ -126,7 +198,7 @@
 	<div class="prenajom-big-bg">
 		<section class="prenajom-stalenic">
 			<h3>Ešte stále Vám nie je jasné ako funguje Time Sharing?</h3>
-			<span>Nevadí. Pozrite sa na príklad p. Jozefa.</span>
+			<span>Nevadí. Pozrite sa na príklad pána Jozefa.</span>
 			<img class="divider" src="/assets/img/home-galery-element.svg">
 			<small>Príklad</small>
 			<p>„Time sharing – Prenájmu naveky“ so spoluvlastníctvom:</p>
@@ -162,7 +234,7 @@
 		</section>
 	</div>
 
-	<section class="pripraveny-sherovat">
+	<section id="pripravenySharovat" class="pripraveny-sherovat">
 		<h2>Ste pripravený Sharovať?</h2>
 		<img class="divider" src="/assets/img/home-about-element.svg">
 		<p>Vyberte si nehnuteľnosť</p>
@@ -172,18 +244,21 @@
 					<strong>Dvoj-Apart-Dom</strong>
 					<img src="/assets/img/dvojdom-element.svg">
 				</div>
+				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
 			</div>
 			<div class="nehnutelnost-prenajom apart-prenajom">
 				<div class="container">
 					<strong>Apart-Dom</strong>
 					<img src="/assets/img/apartdom-element.svg">
 				</div>
+				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
 			</div>
 			<div class="nehnutelnost-prenajom chata-prenajom">
 				<div class="container">
 					<strong>Chata</strong>
 					<img src="/assets/img/chata-element.svg">
 				</div>
+				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
 			</div>
 		</div>
 	</section>

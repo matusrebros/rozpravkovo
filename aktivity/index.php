@@ -1,4 +1,64 @@
-<?php require_once '../_partials/header.php'; ?>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rozpravkovo</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="/assets/css/simple-lightbox.min.css">
+	<link rel="stylesheet" href="/assets/css/style.min.css">
+</head>
+<body>
+
+	<header id="mainheader">
+		<div id="mainbanner" class="announcement-banner">
+			<div class="container-banner">
+				<strong>Už v Predaji!</strong>
+				<span id="bannercloser">X</span>
+			</div>
+		</div>
+		<div class="header-container">
+			<a href="/">
+				<img src="/assets/img/main-logo.svg">
+			</a>
+			<nav>
+				<ul>
+					<li>
+						<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+					</li>
+					<li>
+						<a href="/prenajom-naveky">Prenájom Naveky</a>
+						<span>Time Sharing</span>
+					</li>
+					<li>
+						<a class="active" href="/aktivity">Aktivity</a>
+					</li>
+					<li>
+						<a href="/o-projekte">O projekte</a>
+					</li>
+					<li>
+						<a href="/novinky">Novinky</a>
+					</li>
+					<li>
+						<a href="/galeria">Galéria</a>
+					</li>
+					<li>
+						<a href="/kontakt">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="language-selector">
+				<span class="selected-language">SK</span>
+				<div class="another-laguages">
+					<a href="#">EN</a>
+					<a href="#">PL</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
 
 <main class="aktivity-main">
 	<section class="home-aktivity suppage-aktivity">
@@ -27,7 +87,7 @@
 						<div class="right">
 							<h3>Vysoké Tatry</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
-							<a href="#">Viac</a>
+							<a href="https://www.vt.sk/">Viac</a>
 						</div>
 					</div>
 
@@ -35,7 +95,7 @@
 						<div class="left align-right">
 							<h3>Pieniny</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
-							<a href="#">Viac</a>
+							<a href="https://slovakia.travel/pieninsky-narodny-park">Viac</a>
 						</div>
 						<div class="right">
 							<img src="/assets/img/aktivity-pieniny.jpg">
@@ -49,7 +109,7 @@
 						<div class="right">
 							<h3>Slovenský Raj</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
-							<a href="#">Viac</a>
+							<a href="https://www.slovenskyraj.eu/">Viac</a>
 						</div>
 					</div>
 				</div>
@@ -78,7 +138,7 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute.</p>
 					</div>
 				</div>
-				<a href="/vsetky-aktivity">Všetky Aktivity</a>
+				<a href="/vsetky-aktivity">Naše Aktivity</a>
 			</div>
 		</div>
 	</section>

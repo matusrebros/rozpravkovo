@@ -3,7 +3,8 @@
 <main>
 	<section class="properties">
 		<div class="container">
-		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
+		<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton hoverbackbutton">
+		<img onclick="history.back()" src="/assets/img/back-arrow-hover.svg" class="backButton">
 			<h2>Apart-Dom</h2>
 			<img class="divider" src="/assets/img/home-galery-element.svg">
 			<div class="aparts">
@@ -26,7 +27,7 @@
 						</div>
 						<div class="ctas">
 							<a class="special-cta-green special-cta-blue" href="/apart-dom/1">Vybrať</a>
-							<div class="previewgallery">
+							<div class="dvojpreviewone">
 								<a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Mapa</a>
 							</div>
 						</div>
@@ -54,7 +55,7 @@
 						</div>
 						<div class="ctas">
 							<a class="special-cta-green special-cta-blue" href="#">Vybrať</a>
-							<div class="previewgallerysecond">
+							<div class="dvojpreviewtwo">
 								<a class="special-cta-gray" href="/assets/img/apart-nahlad.jpg">Mapa</a>
 							</div>
 						</div>

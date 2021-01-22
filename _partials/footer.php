@@ -29,33 +29,33 @@
 			</ul>
 		</nav>
 		<div class="contacts">
-			<div class="contact">
+			<a href="#" class="contact">
 				<img src="/assets/img/footer-phone.svg">
-				<a href="#">+ 421 911 123 456</a>
-			</div>
-			<div class="contact">
+				<span>+ 421 911 123 456</span>
+			</a>
+			<a href="#" class="contact">
 				<img src="/assets/img/footer-mail.svg">
-				<a href="#">info@rozpravkovotatry.sk</a>
-			</div>
-			<div class="contact">
+				<span>info@rozpravkovotatry.sk</span>
+			</a>
+			<a href="#" class="contact">
 				<img src="/assets/img/footer-address.svg">
-				<a href="#">Adresa 10, Tatranská Lomnica</a>
-			</div>
-			<div class="contact">
+				<span>Adresa 10, Tatranská Lomnica</span>
+			</a>
+			<a href="#" class="contact">
 				<img src="/assets/img/footer-fb.svg">
-				<a href="#">Facebook</a>
-			</div>
+				<span>Facebook</span>
+			</a>
 		</div>
 	</footer>
 
 	<div class="copyright">
 		<div class="container">
 			<span>Designed by</span>
-			<a href="#">
+			<a href="https://www.behance.net/samuelmucha">
 				<img src="/assets/img/brandly-logo.svg">
 			</a>
 			<span>built by</span>
-			<a href="#">
+			<a href="mailto:info@dpmarketing.sk">
 				<img src="/assets/img/dp-logo.svg">
 			</a>
 		</div>

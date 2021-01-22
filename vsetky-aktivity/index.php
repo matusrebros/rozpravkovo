@@ -5,6 +5,7 @@
 <section class="aktivity-section-of-section">
 		<div class="wrapper">
 			<div class="container">
+				<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton">
 				<h2>Aktivity</h2>
 				<img class="divider" src="/assets/img/home-about-element.svg">
 				<div class="aktivity-wrapper">

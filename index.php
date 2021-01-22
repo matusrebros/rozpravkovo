@@ -13,12 +13,16 @@
 					<p>Rozprávkové bývanie v Tatranskej Lomnici</p>
 					<div class="hero-ctas">
 						<a class="orange-cta" href="/ponuka-nehnutelnosti">Nehnuteľnosti</a>
-						<a class="basic-cta" href="#">Chaty Rozprávkovo</a>
+						<a class="basic-cta" href="https://chatyrozpravkovo.sk/en/">Chaty Rozprávkovo</a>
 					</div>
 				</div>
 			</div>
+			<a href="#homeAbout">
+				<img class="home-hero-arrow scroll-arrow-hover" src="assets/img/scroll-down-arrow.svg">
+				<img class="home-hero-arrow" src="assets/img/scroll-down-arrow-hover.svg">
+			</a>
 		</section>
-		<section class="home-about">
+		<section id="homeAbout" class="home-about">
 			<div class="container">
 				<h2>O Projekte</h2>
 				<img class="divider" src="/assets/img/home-about-element.svg">
@@ -51,14 +55,14 @@
 					<h3>Tatranská Lomnica</h3>
 					<strong>Eurocamp 14599</strong>
 					<span>059 60 Vysoké Tatry</span>
-					<a href="#">Google Mapy</a>
+					<a href="https://goo.gl/maps/Vga8ajWF4HxzUyYx7">Google Mapy</a>
 				</div>
 			</div>
 		</section>
 		<section class="home-counters">
 			<div class="container">
 				<div class="counters">
-					<a href="/apartmany">
+					<a href="/ponuka-nehnutelnosti">
 						<div class="counter">
 							<strong>30</strong>
 							<span>Apartmánov</span>
@@ -92,13 +96,13 @@
 					<h3>Kúpa</h3>
 					<img src="/assets/img/white-element-kupa-prenajom.svg">
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-					<a href="#">Viac</a>
+					<a href="/ponuka-nehnutelnosti">Viac</a>
 				</div>
 				<div class="element prenajom-element">
 					<h3>Prenájom Naveky</h3>
 					<img src="/assets/img/white-element-kupa-prenajom.svg">
 					<p>Načo kupovať za státisíce, keď si môžeš prenajať naveky za tisíce...</p>
-					<a href="#">Viac</a>
+					<a href="/prenajom-naveky">Viac</a>
 				</div>
 			</div>
 		</section>
@@ -123,35 +127,35 @@
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat diam.</p>
 						<a class="linkec" href="/novinky">Všetky Novinky</a>
 						<div class="articles">
-							<a href="#">
+							<a href="https://www.facebook.com/chatyrozpravkovo/">
 								<article class="green">
 									<strong>V areáli Rozprávkova bude stáť detské ihrisko</strong>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<img src="/assets/img/home-article-element.svg">
 								</article>
 							</a>
-							<a href="#">
+							<a href="https://www.facebook.com/chatyrozpravkovo/">
 								<article class="blue">
 									<strong>V areáli Rozprávkova bude stáť detské ihrisko</strong>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<img src="/assets/img/home-article-element.svg">
 								</article>
 							</a>
-							<a href="#">
+							<a href="https://www.facebook.com/chatyrozpravkovo/">
 								<article class="orange">
 									<strong>V areáli Rozprávkova bude stáť detské ihrisko</strong>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<img src="/assets/img/home-article-element.svg">
 								</article>
 							</a>
-							<a href="#">
+							<a href="https://www.facebook.com/chatyrozpravkovo/">
 								<article class="green">
 									<strong>V areáli Rozprávkova bude stáť detské ihrisko</strong>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 									<img src="/assets/img/home-article-element.svg">
 								</article>
 							</a>
-							<a href="#">
+							<a href="https://www.facebook.com/chatyrozpravkovo/">
 								<article class="blue">
 									<strong>V areáli Rozprávkova bude stáť detské ihrisko</strong>
 									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
@@ -165,7 +169,7 @@
 					<div class="container">
 						<h2>Galéria</h2>
 						<img class="divider" src="/assets/img/home-galery-element.svg">
-						<a class="linkec" href="#">Viac</a>
+						<a class="linkec" href="/galeria">Viac</a>
 						<div class="homegallery">
 							<a href="/assets/img/home-gallery.jpg">
 								<img src="/assets/img/home-gallery.jpg" alt="" title=""/>
@@ -202,7 +206,7 @@
 					<div class="chaty-viac">
 						<span>Chaty</span>
 						<span>Rozprávkovo</span>
-						<a href="#">Viac</a>
+						<a href="https://chatyrozpravkovo.sk/en/">Viac</a>
 					</div>
 				</div>
 			</div>

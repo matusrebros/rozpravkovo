@@ -1,4 +1,64 @@
-<?php require_once '../_partials/header.php'; ?>
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rozpravkovo</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;600;700&family=Pacifico&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+	<link rel="stylesheet" href="/assets/css/simple-lightbox.min.css">
+	<link rel="stylesheet" href="/assets/css/style.min.css">
+</head>
+<body>
+
+	<header id="mainheader">
+		<div id="mainbanner" class="announcement-banner">
+			<div class="container-banner">
+				<strong>Už v Predaji!</strong>
+				<span id="bannercloser">X</span>
+			</div>
+		</div>
+		<div class="header-container">
+			<a href="/">
+				<img src="/assets/img/main-logo.svg">
+			</a>
+			<nav>
+				<ul>
+					<li>
+						<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+					</li>
+					<li>
+						<a href="/prenajom-naveky">Prenájom Naveky</a>
+						<span>Time Sharing</span>
+					</li>
+					<li>
+						<a href="/aktivity">Aktivity</a>
+					</li>
+					<li>
+						<a class="active" href="/o-projekte">O projekte</a>
+					</li>
+					<li>
+						<a href="/novinky">Novinky</a>
+					</li>
+					<li>
+						<a href="/galeria">Galéria</a>
+					</li>
+					<li>
+						<a href="/kontakt">Kontakt</a>
+					</li>
+				</ul>
+			</nav>
+			<div class="language-selector">
+				<span class="selected-language">SK</span>
+				<div class="another-laguages">
+					<a href="#">EN</a>
+					<a href="#">PL</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
 
 <main class="o-projekte-main">
 	<section class="home-about">
@@ -36,7 +96,7 @@
 				<h3>Tatranská Lomnica</h3>
 				<strong>Eurocamp 14599</strong>
 				<span>059 60 Vysoké Tatry</span>
-				<a href="#">Google Mapy</a>
+				<a href="https://goo.gl/maps/Vga8ajWF4HxzUyYx7">Google Mapy</a>
 			</div>
 		</div>
 	</section>
@@ -47,7 +107,7 @@
 			<img class="divider" src="/assets/img/home-about-element.svg">
 			<div class="container">
 				<div class="counters oprojekte-counter">
-					<a href="/apartmany">
+					<a href="/ponuka-nehnutelnosti">
 						<div class="counter">
 							<strong>30</strong>
 							<span>Apartmánov</span>

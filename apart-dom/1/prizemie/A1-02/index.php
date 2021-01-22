@@ -1,6 +1,8 @@
 <?php require_once '../../../../_partials/header.php'; ?>
 
 <main class="floor-subpage">
+<img onclick="history.back()" src="/assets/img/arrow-back.svg" class="backButton hoverbackbutton">
+<img onclick="history.back()" src="/assets/img/back-arrow-hover.svg" class="backButton">
 	<section class="top-section">
 		<h5 class="sub-heading">Prízemie</h5>
 		<h2>Apartmán A1-02</h2>
@@ -62,10 +64,10 @@
 		<div class="prices-section forever-rent">
 			<div class="container">
 				<span>CENA <q>PRENÁJOM NAVEKY</q></span>
-				<a class="cta" href="#">Time Sharing</a>
-				<strong>15 000 EUR</strong>
+				<a class="cta" href="http://localhost:1488/prenajom-naveky">Time Sharing</a>
+				<strong>15 000 €</strong>
 				<p>Načo kupovať za státisíce, keď si môžeš prenajať naveky za tisíce...</p>
-				<a class="side-cta" href="#">Viac o Sharingu</a>
+				<a class="side-cta" href="http://localhost:1488/prenajom-naveky">Viac o Sharingu</a>
 			</div>
 		</div>
 	</section>

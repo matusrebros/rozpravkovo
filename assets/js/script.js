@@ -9,9 +9,7 @@ bannercloser.addEventListener('click', () => {
 	banner.classList.add('disabled')
 })
 
-//gallery
-var lightbox1 = $('.homegallery a').simpleLightbox();
-var lightbox2 = $('.previewgallery a').simpleLightbox();
-var lightbox3 = $('.previewgallerysecond a').simpleLightbox();
-var lightbox4 = $('.previewgallerythird a').simpleLightbox();
-var lightbox5 = $('.previewdvoj a').simpleLightbox();
+var lightbox1 = $('.homegallery a').simpleLightbox({animationSpeed: 150});
+var lightbox1 = $('.dvojpreviewone a').simpleLightbox();
+var lightbox2 = $('.dvojpreviewtwo a').simpleLightbox();
+var lightbox3 = $('.dvojpreviewthree a').simpleLightbox();
