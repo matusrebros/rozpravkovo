@@ -49,8 +49,8 @@
 					</li>
 				</ul>
 			</nav>
-			<div class="language-selector">
-				<span class="selected-language">SK</span>
+			<div id="languageSelector" class="language-selector">
+				<span id="currentLanguage" class="selected-language">SK</span>
 				<div class="another-laguages">
 					<a href="#">EN</a>
 					<a href="#">PL</a>

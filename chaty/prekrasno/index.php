@@ -30,9 +30,9 @@
 		<img class="dividertwo" src="/assets/img/chaty-element-detail.svg">
 
 		<small class="headliner-before sub-sections-headline-before">Chata CH1</small>
+		<img class="divider" src="/assets/img/partneri-pattern.svg">
 		<h2 class="headline-subsection">Prekrásnô</h2>
 		<h2>Prízemie</h2>
-		<img class="divider" src="/assets/img/partneri-pattern.svg">
 		<section class="floor-detail detail-subpage subsection-floordetail">
 			<div class="container">
 				<div class="content">
@@ -79,9 +79,9 @@
 			</div>
 		</section>
 		<small class="headliner-before sub-sections-headline-before">Chata CH1</small>
+		<img class="divider" src="/assets/img/partneri-pattern.svg">
 		<h2 class="headline-subsection">Prekrásnô</h2>
 		<h2>1. Poschodie</h2>
-		<img class="divider" src="/assets/img/partneri-pattern.svg">
 		<section class="floor-detail detail-subpage subsection-floordetail">
 			<div class="container">
 				<div class="big-section">

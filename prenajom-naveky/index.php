@@ -134,7 +134,7 @@
 			<img src="/assets/img/prenajom-element.svg">
 			<p>Chaty sú v štandarde drevo, kameň, sklo, s luxusným vybavením, všetok nábytok je vyrobený z masívu.</p>
 		</div>
-		<a href="#pripravenySharovat">Mám záujem o Time Sharing</a>
+		<a id="scrollElementOne" href="#pripravenySharovat">Mám záujem o Time Sharing</a>
 	</section>
 
 	<section class="kvalifikacia-prenajom">
@@ -207,7 +207,7 @@
 				<p class="person-p">Rád cestujem a na kúpu nehnuteľnosti v každej lokalite, ktorú chcem navštíviť nemám dosť peňazí. V Tatrách chcem ročne stráviť tak dva – až tri týždne.  A chcem mať istotu  vysokého štandardu nielen ubytovania, ale aj služieb. Viem, že kúpa Apartmánu by ma stála cca 147.000 €. Kúpa Chaty cca 440.000 €.</p>
 			</div>
 			<div class="person">
-				<p class="person-p">Okrem toho ešte musím počítať s nákladmi na kosenie, upratovanie, pranie, žehlenie, s nákladmi na drobné opravy a údržbu Apartmánu al. Chaty, musím počítať aj s nákladmi na energie, na odpad, s každoročnou daňou z nehnuteľnosti, s papierovačkami a ďalšími neočakávanými nákladmi. Veď to poznáte.</p>
+				<p class="person-p person-p-bottom">Okrem toho ešte musím počítať s nákladmi na kosenie, upratovanie, pranie, žehlenie, s nákladmi na drobné opravy a údržbu Apartmánu al. Chaty, musím počítať aj s nákladmi na energie, na odpad, s každoročnou daňou z nehnuteľnosti, s papierovačkami a ďalšími neočakávanými nákladmi. Veď to poznáte.</p>
 				<img src="/assets/img/person02.png">
 			</div>
 			<span>Ako by ma to vyšlo, keby som skúsil „Time sharing“ - „Prenájom naveky“?</span>
@@ -225,7 +225,7 @@
 					<p>Platba 10 % = 1 790 € pri podpise Zmlúv, doplatok  90 %  = 16 110 € do 5 dní po zavkladovaní Zmluvy o kúpe týždňa na katastri nehnuteľností, spolu 17 900 €.</p>
 				</div>
 			</div>
-			<p>Všetky starosti  so správou majetku mám odbúrané v poplatku <strong>49 € mesačne</stron>.</p>
+			<p>Všetky starosti  so správou majetku mám odbúrané v poplatku <strong>49 € mesačne</strong>.</p>
 			<div class="bottom-person">
 				<img src="/assets/img/last-person.png">
 				<p>A nie som viazaný chodiť na jedno miesto celý život. Keď ma Tatry omrzia, ponúknem v mojom Apartmáne (Chate) dovolenku mojim blízkym, alebo kamarátom. Alebo predám týždeň za polovičnú cenu niekomu zo známych.</p>

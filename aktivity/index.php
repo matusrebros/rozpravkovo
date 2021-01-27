@@ -82,12 +82,12 @@
 
 					<div class="two-column-section orange-twocolumn">
 						<div class="left">
-							<img src="/assets/img/aktivity-vysoke-tatry.jpg">
+							<a href="https://www.vt.sk/"><img src="/assets/img/aktivity-vysoke-tatry.jpg"></a>
 						</div>
 						<div class="right">
 							<h3>Vysoké Tatry</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
-							<a href="https://www.vt.sk/">Viac</a>
+							<a class="orange-href" href="https://www.vt.sk/">Viac</a>
 						</div>
 					</div>
 
@@ -95,21 +95,21 @@
 						<div class="left align-right">
 							<h3>Pieniny</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
-							<a href="https://slovakia.travel/pieninsky-narodny-park">Viac</a>
+							<a class="blue-href" href="https://slovakia.travel/pieninsky-narodny-park">Viac</a>
 						</div>
 						<div class="right">
-							<img src="/assets/img/aktivity-pieniny.jpg">
+							<a href="https://slovakia.travel/pieninsky-narodny-park"><img src="/assets/img/aktivity-pieniny.jpg"></a>
 						</div>
 					</div>
 
 					<div class="two-column-section last-twos green-twocolumn">
 						<div class="left">
-							<img src="/assets/img/aktivity-slovensky-raj.jpg">
+							<a href="https://www.slovenskyraj.eu/"><img src="/assets/img/aktivity-slovensky-raj.jpg"></a>
 						</div>
 						<div class="right">
 							<h3>Slovenský Raj</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lobortis elementum nibh tellus molestie nunc non blandit.</p>
-							<a href="https://www.slovenskyraj.eu/">Viac</a>
+							<a class="green-href" href="https://www.slovenskyraj.eu/">Viac</a>
 						</div>
 					</div>
 				</div>
@@ -119,7 +119,7 @@
 	<section class="aktivity-section-of-section">
 		<div class="wrapper">
 			<div class="container">
-				<h2>Aktivity</h2>
+				<h2>Naše Aktivity</h2>
 				<img class="divider" src="/assets/img/home-about-element.svg">
 				<div class="aktivity-wrapper">
 					<div class="aktivita">

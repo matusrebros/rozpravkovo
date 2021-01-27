@@ -195,9 +195,11 @@ header {
             display: flex;
         }
 
-        &:active>.another-laguages {
-            display: flex;
-        }
+        &.active {
+			.another-laguages {
+				display: flex;
+			}
+		}
 
         .selected-language {
             border: 1px solid $lightgreen;
@@ -455,6 +457,7 @@ main {
             font-weight: 700;
             margin-top: 32px;
             transition: all 0.3s ease-in-out;
+            background: #fff;
 
             &:hover {
                 border: 2px solid $lightorange;
@@ -667,6 +670,7 @@ main {
             border: 2px solid black;
             margin-top: 32px;
             transition: all 0.3s ease-in-out;
+            background: #fff;
 
             &:hover {
                 color: $lightorange;
@@ -711,6 +715,7 @@ main {
         border: 2px solid black;
         margin-bottom: 56px;
         transition: all 0.3s ease-in-out;
+        background: #fff;
 
         &:hover {
             border: 2px solid $lightorange;
@@ -1201,6 +1206,7 @@ footer {
         border: 2px solid black;
         margin-bottom: 56px;
         transition: all 0.3s ease-in-out;
+        background: #fff;
 
         &:hover {
             border: 2px solid $lightorange;
@@ -1506,19 +1512,14 @@ footer {
         }
 
         img {
+            max-width: 632px;
             box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.34);
         }
 
         a {
             color: #fff;
-            background: $lightorange;
             padding: 16px 56px;
             font-weight: 700;
-            transition: all 0.3s ease-in-out;
-
-            &:hover {
-                background: $darkorange;
-            }
         }
 
         .align-right {
@@ -1574,6 +1575,7 @@ footer {
         font-weight: 700;
         font-size: 1em;
         transition: all 0.3s ease-in-out;
+        background: #fff;
 
         &:hover {
             color: $lightorange;
@@ -1618,7 +1620,8 @@ footer {
         background-image: url("../img/nase-aktivity-bg.svg");
         background-repeat: no-repeat;
         background-size: contain;
-        background-position: top center;
+		background-position: top center;
+		background-color: #fff;
     }
 
     .wrapper {
@@ -1744,6 +1747,7 @@ footer {
                 border: 2px solid black;
                 padding: 16px 56px;
                 font-weight: 700;
+                background: #fff;
 
                 &:first-child {
                     margin-right: 40px;
@@ -1786,7 +1790,7 @@ footer {
     }
 
     .divider {
-        margin: 56px 0;
+        margin: 32px 0;
     }
 
     .dividertwo {
@@ -1851,7 +1855,7 @@ footer {
 
     .podorys-img {
         width: 100%;
-        max-width: 600px;
+        max-width: 500px;
         margin: 0 56px;
     }
 
@@ -1959,6 +1963,7 @@ footer {
                 font-size: 1.2em;
                 margin: 0 16px;
                 transition: all 0.3s ease-in-out;
+                background: #fff;
 
                 &:hover {
                     color: $lightorange;
@@ -2154,6 +2159,7 @@ footer {
         padding: 16px 56px;
         margin-top: 56px;
         transition: all 0.3s ease-in-out;
+        background: #fff;
 
         &:hover {
             color: $lightorange;
@@ -2170,6 +2176,7 @@ footer {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    width: 100%;
 
     .prices-section {
         max-width: 533px;
@@ -2386,11 +2393,12 @@ footer {
 
 .headline-subsection {
     font-weight: normal;
-    margin-bottom: 32px;
+    // margin-bottom: 32px;
 }
 
 .subsection-floordetail {
-    margin: 56px 0;
+    margin: 120px 0;
+    padding-bottom: 80px;
 }
 
 .special-cta-green {
@@ -2475,7 +2483,7 @@ footer {
         color: $lightorange !important;
     }
 
-    a {
+    .orange-href {
         background: $lightorange !important;
         transition: all 0.3s ease-in-out;
 
@@ -2494,7 +2502,7 @@ footer {
         color: $lightblue !important;
     }
 
-    a {
+    .blue-href {
         background: $lightblue !important;
         transition: all 0.3s ease-in-out;
 
@@ -2513,7 +2521,7 @@ footer {
         color: $lightgreen !important;
     }
 
-    a {
+    .green-href {
         background: $lightgreen !important;
         transition: all 0.3s ease-in-out;
 
@@ -2538,7 +2546,7 @@ footer {
 
     p {
         max-width: 300px;
-        text-shadow: 5px 0px 30px rgb(255, 255, 255);
+        text-shadow: 5px 0px 30px #fff, 5px 0px 30px #fff, 5px 0px 30px #fff, 5px 0px 30px #fff, 5px 0px 30px #fff, 5px 0px 30px #fff, 5px 0px 30px #fff, 5px 0px 30px #fff;
     }
 
     .left,
@@ -2846,7 +2854,8 @@ footer {
         font-size: 0.8em;
         margin: 24px 0;
         align-items: center;
-        margin: 40px 0;
+		margin: 40px 0;
+		max-width: 195px;
     }
 
     span {
@@ -3197,82 +3206,88 @@ footer {
 
 .form-thankyou-popup,
 .gdrppopup {
-	background-color: rgba(255,255,255,0.7);
+    background-color: rgba(255, 255, 255, 0.7);
 
-	display: flex;
-	justify-content: center;
-	align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
-	position: fixed;
-	top: 0;
-	width: 100vw;
-	height: 100vh;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
 
-	transition: visibility 0s, opacity 0.3s ease-in-out;
-	opacity: 0;
-	visibility: hidden;
+    transition: visibility 0s, opacity 0.3s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
 
-	&.active {
-		opacity: 1;
-		visibility: visible;
-	}
+    &.active {
+        opacity: 1;
+        visibility: visible;
+    }
 
-	.container {
-		background: #fff;
-		position: relative;
-		display: flex;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-		padding: 80px 120px;
-		box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.2);
+    .container {
+        background: #fff;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 80px 120px;
+        box-shadow: 0px 0px 100px 0px rgba(0, 0, 0, 0.2);
 
-		h3 {
-			font-family: $pacifico;
-			font-size: 2.5em;
-		}
+        h3 {
+            font-family: $pacifico;
+            font-size: 2.5em;
+        }
 
-		img {
-			margin: 40px 0;
-			max-width: 100px;
-		}
+        img {
+            margin: 40px 0;
+            max-width: 100px;
+        }
 
-		p {
-			font-size: 1.2em;
-			max-width: 240px;
-			text-align: center;
-		}
+        p {
+            font-size: 1.2em;
+            max-width: 240px;
+            text-align: center;
+        }
 
-		.closer {
-			position: absolute;
-			top: 0;
-			right: 0;
-			color: rgba(#000000, 0.5);
-			font-family: $baskerville;
-			padding: 16px;
-			cursor: pointer;
-			font-size: 0.8em;
-			font-weight: bold;
-		}
-	}
+        .closer {
+            position: absolute;
+            top: 0;
+            right: 0;
+            color: rgba(#000000, 0.5);
+            font-family: $baskerville;
+            padding: 16px;
+            cursor: pointer;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+    }
 }
 
 #gdprpopup {
-	overflow: scroll;
-	h3 {
-		font-family: $lora;
-	}
+    overflow: scroll;
 
-	p {
-		font-size: 1em;
-		max-width: unset;
-		margin: 16px 0;
-	}
+    h3 {
+        font-family: $lora;
+    }
 
-	.container {
-		padding: 80px;
-		overflow: scroll;
-		width: 80%;
-		top: 500px;
-	}
+    p {
+        font-size: 1em;
+        max-width: unset;
+        margin: 16px 0;
+    }
+
+    .container {
+        padding: 80px;
+        overflow: scroll;
+        width: 80%;
+        top: 500px;
+    }
+}
+
+.person-p-bottom {
+	margin-left: 0;
+	margin-right: 120px;
 }
