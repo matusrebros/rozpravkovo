@@ -121,9 +121,15 @@ currentLanguage.addEventListener('click', () => {
 
 //lightboxes
 var lightbox1 = $('.homegallery a').simpleLightbox({
-	animationSpeed: 150,
-	fadeSpeed: 100
+	animationSpeed: 100,
+	fadeSpeed: 0
 });
-var lightbox1 = $('.dvojpreviewone a').simpleLightbox();
-var lightbox2 = $('.dvojpreviewtwo a').simpleLightbox();
-var lightbox3 = $('.dvojpreviewthree a').simpleLightbox();
+var lightbox1 = $('.dvojpreviewone a').simpleLightbox({
+	fadeSpeed: 0
+});
+var lightbox2 = $('.dvojpreviewtwo a').simpleLightbox({
+	fadeSpeed: 0
+});
+var lightbox3 = $('.dvojpreviewthree a').simpleLightbox({
+	fadeSpeed: 0
+});

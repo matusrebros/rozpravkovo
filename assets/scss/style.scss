@@ -932,6 +932,12 @@ main {
                 width: 100%;
                 max-width: 25px;
             }
+
+            transition: all 0.3s ease-in-out;
+
+            &:hover {
+                opacity: 0.5;
+            }
         }
     }
 
@@ -3220,6 +3226,7 @@ footer {
             span {
                 color: #B1B1B1;
                 margin-top: 16px;
+                line-height: 25px;
 
                 strong {
                     font-size: 1em;
@@ -5782,7 +5789,7 @@ p.person-p:nth-child(2) {
 
 .floor-detail .content .table .severka p,
 .floor-detail .content .table .severka img {
-    max-width: 75px;
+    max-width: 65px;
 }
 
 
@@ -5880,5 +5887,38 @@ div.person:nth-child(7) {
 
     .hero-section .container {
         background-position: calc(50% - -500px) bottom;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+
+    #timesharing .prenajom-benefity .benefits {
+        max-width: 800px;
+    }
+
+    #timesharing .prenajom-benefity .benefit {
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (min-width: 2200px) {
+
+    .hero-section .container {
+        background-size: 120vmin;
+    }
+
+    .home-aktivity .container {
+        background-size: 80vmin;
+    }
+
+    .home-aktivity .container {
+        background-position: calc(50% - -Ť00px) bottom;
+    }
+
+    .home-aktivity .content {
+        margin-right: 700px;
     }
 }

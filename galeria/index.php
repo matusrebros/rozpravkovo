@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rozpravkovo</title>
+	<title>Galéria - Rozpravkovo Tatry</title>
+	<meta name="description" content="Rozprávkové bývanie v Tatranskej Lomnici.">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;600;700&family=Pacifico&display=swap"
@@ -52,7 +53,7 @@
 							<a href="/novinky">Novinky</a>
 						</li>
 						<li>
-							<a href="/galeria">Galéria</a>
+							<a class="active" href="/galeria">Galéria</a>
 						</li>
 						<li>
 							<a href="/kontakt">Kontakt</a>

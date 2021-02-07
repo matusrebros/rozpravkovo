@@ -4,7 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Rozpravkovo</title>
+	<title>Prenajom naveky - Rozpravkovo Tatry</title>
+	<meta name="description" content="Rozprávkové bývanie v Tatranskej Lomnici.">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link
 		href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&family=Lora:wght@400;600;700&family=Pacifico&display=swap"
@@ -38,7 +39,7 @@
 							<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
 						</li>
 						<li>
-							<a href="/prenajom-naveky">Prenájom Naveky</a>
+							<a class="active" href="/prenajom-naveky">Prenájom Naveky</a>
 							<span>Time Sharing</span>
 						</li>
 						<li>
