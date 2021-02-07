@@ -5640,15 +5640,118 @@ header {
 }
 
 
-.home-novinky .articles article, .main-novinky .articles article {
-	padding: 16px 48px;
-  }
+.home-novinky .articles article,
+.main-novinky .articles article {
+    padding: 16px 48px;
+}
 
-  .home-novinky .articles a, .main-novinky .articles a {
-	display: flex;
-	margin: 8px;
+.home-novinky .articles a,
+.main-novinky .articles a {
+    display: flex;
+    margin: 8px;
 
-	@media screen and ( max-width: 500px ) {
-		margin: 8px 0;
+    @media screen and (max-width: 500px) {
+        margin: 8px 0;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+
+    .hero-section .content {
+        max-width: 100%;
+    }
+
+    .hero-section .container {
+        background-image: unset;
+    }
+
+
+    .home-aktivity .content {
+        max-width: unset;
+        width: 100%;
+    }
+
+    .home-aktivity .container {
+        background-image: unset;
+        margin-right: 0;
+    }
+
+
+    .home-aktivity .content {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+
+    .home-aktivity .container {
+        background-position: 1200px bottom;
+    }
+
+    .home-aktivity .content {
+        margin-left: 700px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+
+    .prenajom-stalenic .person img {
+        max-width: 150px;
+    }
+
+    .prenajom-stalenic .bottom-person img {
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .prenajom-stalenic .cards .card {
+        padding: 32px 0;
+        width: 95%;
+    }
+
+    .prenajom-stalenic .cards .card {
+        margin: 32px 0;
+    }
+
+    .prenajom-stalenic .cards {
+        align-items: center;
+    }
+
+}
+
+.home-counters .counters.oprojekte-counter {
+    padding: 32px 0;
+}
+
+
+p.person-p:nth-child(2) {
+    transform: translateX(100px);
+
+	@media screen and ( max-width: 850px ) {
+		transform: unset;
 	}
+}
+
+.prenajom-stalenic .person-p {
+    margin-left: 0;
+}
+
+@media screen and ( max-width: 1000px ) {
+
+.prenajom-stalenic .person {
+	flex-direction: column;
   }
+
+  p.person-p:nth-child(2) {
+	transform: unset;
+  }
+
+  .person-p-bottom {
+	margin-right: 0;
+  }
+
+  div.person:nth-child(7) {
+	flex-direction: column-reverse;
+  }
+
+}

@@ -39,8 +39,28 @@ bannercloser.addEventListener('click', () => {
 })
 
 //cookies
-const cookiesCloser = document.getElementById('cookiesCloser')
-const cookiesBanner = document.getElementById('cookiesBanner')
+// const cookiesCloser = document.getElementById('cookiesCloser')
+// const cookiesBanner = document.getElementById('cookiesBanner')
+
+// function checkCookie() {
+// 	if (getCookie('cookieb')) {
+// 		cookiesBanner.classList.add('disabled');
+// 	} else {
+// 		cookiesBanner.classList.remove('disabled');
+// 	}
+// }
+// checkCookie()
+
+// cookiesCloser.addEventListener('click', () => {
+// 	setTimeout(function () {
+// 		cookiesBanner.classList.remove('disabled');
+// 	}, 1 * 24 * 60 * 60 * 1000)
+// 	var dd = new Date();
+// 	dd.setTime(dd.getTime() + (1 * 24 * 60 * 60 * 1000));
+// 	var expiresb = "; expires=" + dd.toGMTString();
+// 	document.cookie = "cookieb=1" + expiresb + "; path=/";
+// 	cookiesBanner.classList.add('disabled');
+// })
 
 //burger animation
 const topBurger = document.getElementById('topBurger')
