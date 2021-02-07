@@ -39,28 +39,28 @@ bannercloser.addEventListener('click', () => {
 })
 
 //cookies
-// const cookiesCloser = document.getElementById('cookiesCloser')
-// const cookiesBanner = document.getElementById('cookiesBanner')
+const cookiesCloser = document.getElementById('cookiesCloser')
+const cookiesBanner = document.getElementById('cookiesBanner')
 
-// function checkCookie() {
-// 	if (getCookie('cookieb')) {
-// 		cookiesBanner.classList.add('disabled');
-// 	} else {
-// 		cookiesBanner.classList.remove('disabled');
-// 	}
-// }
-// checkCookie()
+function checkCookies() {
+	if (getCookie('cookieb')) {
+		cookiesBanner.classList.add('disabled');
+	} else {
+		cookiesBanner.classList.remove('disabled');
+	}
+}
+checkCookies()
 
-// cookiesCloser.addEventListener('click', () => {
-// 	setTimeout(function () {
-// 		cookiesBanner.classList.remove('disabled');
-// 	}, 1 * 24 * 60 * 60 * 1000)
-// 	var dd = new Date();
-// 	dd.setTime(dd.getTime() + (1 * 24 * 60 * 60 * 1000));
-// 	var expiresb = "; expires=" + dd.toGMTString();
-// 	document.cookie = "cookieb=1" + expiresb + "; path=/";
-// 	cookiesBanner.classList.add('disabled');
-// })
+cookiesCloser.addEventListener('click', () => {
+	setTimeout(function () {
+		cookiesBanner.classList.remove('disabled');
+	}, 1 * 24 * 60 * 60 * 1000)
+	var dd = new Date();
+	dd.setTime(dd.getTime() + (1 * 24 * 60 * 60 * 1000));
+	var expiresb = "; expires=" + dd.toGMTString();
+	document.cookie = "cookieb=1" + expiresb + "; path=/";
+	cookiesBanner.classList.add('disabled');
+})
 
 //burger animation
 const topBurger = document.getElementById('topBurger')
@@ -122,7 +122,7 @@ currentLanguage.addEventListener('click', () => {
 //lightboxes
 var lightbox1 = $('.homegallery a').simpleLightbox({
 	animationSpeed: 150,
-	fadeSpeed: 200
+	fadeSpeed: 100
 });
 var lightbox1 = $('.dvojpreviewone a').simpleLightbox();
 var lightbox2 = $('.dvojpreviewtwo a').simpleLightbox();

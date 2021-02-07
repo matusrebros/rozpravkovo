@@ -1759,12 +1759,18 @@ footer {
         display: flex;
         max-width: 65%;
         width: 100%;
+        overflow: hidden;
+
+        &:hover .image-property {
+            transform: scale(1.05);
+        }
     }
 
     .image-property {
         width: 100%;
         align-self: center;
         // max-width: 65%;
+        transition: all 0.3s ease-in-out;
     }
 
     h2 {
@@ -3174,6 +3180,8 @@ footer {
         img {
             // width: 100%;
             margin: 32px;
+            -webkit-filter: drop-shadow(5px 5px 20px #ddd);
+            filter: drop-shadow(5px 5px 20px #ddd);
         }
     }
 
@@ -3268,6 +3276,10 @@ footer {
 
 .podorys-link {
     margin: 0 56px;
+
+    &:hover .podorys-img {
+        transform: scale(1.05);
+    }
 }
 
 .detail-bytu-big-bg {
@@ -3763,6 +3775,7 @@ footer {
         max-width: 250px;
         margin: 32px 0;
         align-self: center;
+
     }
 
     .floor-detail .content .table {
@@ -5547,7 +5560,8 @@ header {
 
 .aktivity-section .two-column-section img {
     box-shadow: unset !important;
-    filter: drop-shadow(0px 0px 32px 0px rgba(0, 0, 0, 0.34)) !important;
+    -webkit-filter: drop-shadow(5px 5px 20px #aaa) !important;
+    filter: drop-shadow(5px 5px 20px #aaa) !important;
 }
 
 @media screen and (max-width: 800px) {
@@ -5727,31 +5741,144 @@ header {
 p.person-p:nth-child(2) {
     transform: translateX(100px);
 
-	@media screen and ( max-width: 850px ) {
-		transform: unset;
-	}
+    @media screen and (max-width: 850px) {
+        transform: unset;
+    }
 }
 
 .prenajom-stalenic .person-p {
     margin-left: 0;
 }
 
-@media screen and ( max-width: 1000px ) {
+@media screen and (max-width: 1000px) {
 
-.prenajom-stalenic .person {
-	flex-direction: column;
-  }
+    .prenajom-stalenic .person {
+        flex-direction: column;
+    }
 
-  p.person-p:nth-child(2) {
-	transform: unset;
-  }
+    p.person-p:nth-child(2) {
+        transform: unset;
+    }
 
-  .person-p-bottom {
-	margin-right: 0;
-  }
+    .person-p-bottom {
+        margin-right: 0;
+    }
 
-  div.person:nth-child(7) {
-	flex-direction: column-reverse;
-  }
+    div.person:nth-child(7) {
+        flex-direction: column-reverse;
+    }
 
+}
+
+.podorys-img {
+    transition: all 0.3s ease-in-out !important;
+}
+
+
+.cta-nehnutelnosti {
+    background: #fff;
+}
+
+
+.floor-detail .content .table .severka p,
+.floor-detail .content .table .severka img {
+    max-width: 75px;
+}
+
+
+div.person:nth-child(7) {
+    margin-bottom: 56px;
+}
+
+@media screen and (max-width: 800px) {
+
+    /* Prvok | http://localhost:8888/prenajom-naveky */
+
+    div.person:nth-child(7) {
+        margin-bottom: 56px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .prenajom-stalenic .person-p {
+            margin: 0;
+        }
+    }
+
+    .prenajom-stalenic .person {
+        padding: 0 32px;
+    }
+
+
+    .prenajom-big-bg {
+        background-size: auto;
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    .prenajom-big-bg {
+        /* background-size: contain; */
+        background-size: auto;
+    }
+
+    .kontakt-top-section .contact-box {
+        /* padding: 56px; */
+        padding: 32Px 16px;
+    }
+
+    .kontakt-top-section .contact-box span a {
+        white-space: nowrap;
+    }
+
+
+
+}
+
+@media screen and (max-width: 2200px) {
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    @media screen and (min-width: 2200px) {
+        .home-aktivity .container {
+            /* background-position: 1200px bottom; */
+            background-position: calc(50% - -600px) bottom;
+            justify-content: center;
+            display: flex;
+        }
+
+        .home-aktivity .content {
+            /* margin-left: 700px; */
+            margin-right: 600px;
+        }
+    }
+
+    .home-aktivity .container {
+        /* margin-right: 56px; */
+        margin-right: 0;
+    }
+}
+
+@media screen and (min-width: 2200px) {
+
+    .home-aktivity .container {
+        background-position: calc(50% - -600px) bottom;
+        justify-content: center;
+        display: flex;
+    }
+
+    .home-aktivity .content {
+        margin-right: 600px;
+    }
+
+    .home-aktivity .container {
+        margin-right: 0;
+    }
+
+    .home-aktivity .content {
+        margin-left: 0;
+    }
+
+    .hero-section .container {
+        background-position: calc(50% - -500px) bottom;
+    }
 }
