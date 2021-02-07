@@ -24,6 +24,7 @@ input[type=number] {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 *,
@@ -96,6 +97,40 @@ html:after {
 body {
     font-family: $lora;
     font-size: 100%;
+    overflow-x: hidden;
+}
+
+#cookiesBanner {
+    background: #fff;
+    box-shadow: 0px 20px 20px 17px rgba(0, 0, 0, 0.15);
+
+    padding: 12px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    bottom: 0;
+    z-index: 100;
+
+    &.disabled {
+        display: none;
+    }
+
+    p {
+        color: #000;
+    }
+
+    button {
+        color: #fff;
+        background: $lightorange;
+        font-weight: bold;
+
+        padding: 8px 16px;
+        margin: 0 0 0 24px;
+        cursor: pointer;
+    }
 }
 
 header {
@@ -121,6 +156,7 @@ header {
     nav {
         width: 100%;
         max-width: 1300px;
+        margin: 0 auto;
     }
 
     ul {
@@ -196,10 +232,10 @@ header {
         }
 
         &.active {
-			.another-laguages {
-				display: flex;
-			}
-		}
+            .another-laguages {
+                display: flex;
+            }
+        }
 
         .selected-language {
             border: 1px solid $lightgreen;
@@ -267,6 +303,14 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
+        @media screen and (min-width: 1700px) {
+            padding: 120px 56px;
+        }
+
+        @media screen and (min-width: 2000px) {
+            padding: 140px 56px;
+        }
     }
 
     .hero-logo {
@@ -289,6 +333,7 @@ main {
             color: #fff;
             font-family: $pacifico;
             font-size: 1.6em;
+            text-align: center;
         }
     }
 
@@ -362,7 +407,8 @@ main {
 
     .advantages {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
+        flex-flow: row wrap;
 
         width: 100%;
     }
@@ -384,6 +430,7 @@ main {
 
         max-width: 120px;
         min-height: 200px;
+        margin: 0 56px;
 
         img {
             width: 100%;
@@ -471,9 +518,9 @@ main {
     margin: 120px 56px;
 
     .container {
-        max-width: 700px;
         width: 100%;
         margin: 0 auto;
+        max-width: 900px;
 
         display: flex;
         flex-direction: column;
@@ -486,6 +533,8 @@ main {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        justify-content: center;
+        flex-flow: row wrap;
 
         &.oprojekte-counter {
             box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.34);
@@ -513,6 +562,7 @@ main {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 32px 56px;
 
         &:hover>strong {
             color: $lightorange;
@@ -527,6 +577,7 @@ main {
 
         span {
             font-weight: 400;
+            white-space: nowrap;
         }
     }
 }
@@ -654,6 +705,7 @@ main {
 
         strong {
             font-size: 1em;
+            text-align: center;
         }
 
         p {
@@ -747,6 +799,7 @@ main {
             justify-content: center;
             align-items: center;
             padding: 48px;
+            min-height: 290px;
 
             strong {
                 font-family: $pacifico;
@@ -888,7 +941,8 @@ main {
         justify-content: center;
         align-items: flex-start;
 
-        input {
+        input,
+        textarea {
             width: 100%;
             color: #fff;
             background: $darkgreen;
@@ -1049,6 +1103,11 @@ footer {
     justify-content: center;
     align-items: center;
 
+    @media screen and (max-width: 850px) {
+        background: #000000;
+        padding: 80px 32px;
+    }
+
     .top-logo {
         margin-bottom: 56px;
     }
@@ -1059,12 +1118,21 @@ footer {
 
         padding-bottom: 56px;
         border-bottom: 1px solid #454545;
+
+        @media screen and (max-width: 850px) {
+            padding-bottom: 16px;
+        }
     }
 
     ul {
         display: flex;
         justify-content: space-evenly;
         align-items: center;
+
+        @media screen and (max-width: 850px) {
+            justify-content: center;
+            flex-direction: column;
+        }
 
         a {
             font-weight: 600;
@@ -1086,6 +1154,10 @@ footer {
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            @media screen and (max-width: 850px) {
+                margin: 16px 0;
+            }
         }
 
         span {
@@ -1106,11 +1178,21 @@ footer {
         width: 100%;
         max-width: 1000px;
 
+        @media screen and (max-width: 850px) {
+            justify-content: center;
+            padding-top: 16px;
+            flex-direction: column;
+        }
+
         .contact {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
             align-items: center;
+
+            @media screen and (max-width: 850px) {
+                margin: 32px 0;
+            }
 
             img {
                 margin-bottom: 24px;
@@ -1138,16 +1220,29 @@ footer {
 .copyright {
     background: #000;
 
+    @media screen and (max-width: 550px) {
+        background: #3D3D3D;
+    }
+
     .container {
         display: flex;
         justify-content: center;
         align-items: center;
+
+        @media screen and (max-width: 550px) {
+            flex-direction: column;
+            padding: 32px;
+        }
 
         span {
             font-weight: 400;
             color: #fff;
             font-size: 1em;
             margin: 24px;
+
+            @media screen and (max-width: 550px) {
+                margin: 16px 0;
+            }
         }
 
         a {
@@ -1157,6 +1252,10 @@ footer {
             img {
                 max-width: 90px;
                 width: 100%;
+
+                @media screen and (max-width: 550px) {
+                    margin: 16px 0;
+                }
             }
         }
     }
@@ -1620,8 +1719,8 @@ footer {
         background-image: url("../img/nase-aktivity-bg.svg");
         background-repeat: no-repeat;
         background-size: contain;
-		background-position: top center;
-		background-color: #fff;
+        background-position: top center;
+        background-color: #fff;
     }
 
     .wrapper {
@@ -1664,6 +1763,7 @@ footer {
 
     .image-property {
         width: 100%;
+        align-self: center;
         // max-width: 65%;
     }
 
@@ -1857,6 +1957,7 @@ footer {
         width: 100%;
         max-width: 500px;
         margin: 0 56px;
+        align-self: center;
     }
 
     .container {
@@ -2033,7 +2134,8 @@ footer {
 
     .sellers {
         display: flex;
-        justify-content: space-between;
+        flex-flow: row wrap;
+        justify-content: center;
         align-items: center;
         margin-bottom: 120px;
     }
@@ -2047,7 +2149,7 @@ footer {
         justify-content: center;
         align-items: center;
         padding: 56px 80px;
-        margin: 0 32px;
+        margin: 32px 32px;
 
         strong {
             font-size: 1.2em;
@@ -2535,6 +2637,7 @@ footer {
     display: flex;
     width: 100%;
     justify-content: center;
+    flex-flow: row wrap;
     margin-bottom: 120px;
 
     .left {
@@ -2646,6 +2749,8 @@ footer {
             display: flex;
             flex-flow: row wrap;
             justify-content: center;
+            align-items: center;
+            max-width: 1110px;
         }
 
         a {
@@ -2666,10 +2771,10 @@ footer {
         .benefit {
             display: flex;
             flex-direction: column;
-            width: 20%;
             justify-content: center;
             align-items: center;
-            margin: 56px 16px;
+            margin: 32px 56px;
+            flex-wrap: wrap;
 
             span {
                 font-weight: bold;
@@ -2854,8 +2959,8 @@ footer {
         font-size: 0.8em;
         margin: 24px 0;
         align-items: center;
-		margin: 40px 0;
-		max-width: 195px;
+        margin: 40px 0;
+        max-width: 195px;
     }
 
     span {
@@ -3082,7 +3187,7 @@ footer {
         display: flex;
         max-width: 1200px;
 
-        margin: 120px 0;
+        margin: 56px 0;
 
         .card {
             display: flex;
@@ -3288,6 +3393,2228 @@ footer {
 }
 
 .person-p-bottom {
-	margin-left: 0;
-	margin-right: 120px;
+    margin-left: 0;
+    margin-right: 120px;
 }
+
+@media screen and (max-width: 950px) {
+
+    .home-realizovane .content {
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .home-realizovane .content .chaty-viac {
+        width: 100%;
+        padding: 32px 0;
+        min-width: unset;
+    }
+
+    .home-realizovane {
+        margin: 0 32px;
+    }
+
+    .home-realizovane .content .chaty-viac span {
+        font-size: 1.5em;
+    }
+
+    div.content:nth-child(4)>img:nth-child(1) {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    .main-form .container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .main-form .content h3 {
+        text-align: center;
+    }
+
+    .main-form .content p {
+        text-align: center;
+    }
+
+    .main-form .content a {
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-form .content {
+        margin-right: 0;
+    }
+
+    .main-form form {
+        align-items: center;
+    }
+
+    .main-form .container .content,
+    .main-form .container form {
+        width: 100%;
+        padding: 0 32px;
+    }
+
+    .main-form .wrapper {
+        background-image: unset;
+    }
+
+}
+
+@media screen and (max-width: 500px) {
+
+    .home-about .advantage img {
+        max-height: 40px;
+    }
+
+    .home-counters {
+        margin: 120px 0;
+    }
+
+    .home-counters .counters.oprojekte-counter {
+        box-shadow: unset;
+    }
+
+    .o-projekte-main .home-counters .divider {
+        max-width: 200px;
+    }
+
+    .home-galeria .divider,
+    .main-galeria .divider {
+        max-width: 200px;
+    }
+
+    .o-projekte-main .home-galeria p {
+        margin: 0 32px 56px 32px;
+    }
+
+
+    #timesharing .prenajom-top p {
+        margin: 24px 32px;
+    }
+
+    #timesharing .prenajom-unas .content {
+        /* margin: 56px 0; */
+        margin: 56px 32px 0 32px;
+    }
+
+    .kvalifikacia-prenajom p {
+        /* margin: 56px 0; */
+        margin: 56px 32px;
+    }
+
+    .kvalifikacia-prenajom ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kvalifikacia-prenajom .kvalifikovany-divisions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 200px;
+    }
+
+    .kvalifikacia-prenajom li {
+        /* margin: 40px 0; */
+        /* max-width: 195px; */
+        margin: 16px 0;
+        max-width: 100%;
+    }
+
+    .pripraveny-sherovat .nehnutelnosti-prenajom {
+        flex-direction: column;
+    }
+
+    .pripraveny-sherovat .nehnutelnost-prenajom {
+        width: unset;
+    }
+
+    .prenajom-stalenic h3 {
+        text-align: center;
+    }
+
+    .prenajom-stalenic .person {
+        flex-direction: column;
+    }
+
+    .prenajom-stalenic .person-p {
+        margin-left: 0;
+    }
+
+    .person-p-bottom {
+        margin-right: 0;
+    }
+
+    .prenajom-stalenic span {
+        margin: 56px 32px;
+        text-align: center;
+    }
+
+    .prenajom-stalenic .cards {
+        flex-direction: column;
+    }
+
+    .prenajom-stalenic .cards .card {
+        width: unset;
+    }
+
+    .prenajom-stalenic .bottom-person p {
+        /* margin: 32px 0; */
+        margin: 32px;
+    }
+
+    .prenajom-stalenic p {
+        text-align: center;
+        margin: 0 32px;
+    }
+
+    .kvalifikacia-prenajom h3 {
+        text-align: center;
+        padding: 0 32px;
+    }
+
+    #timesharing .prenajom-unas h2 {
+        margin: 0 32px;
+        text-align: center;
+    }
+
+    #timesharing .prenajom-benefity a {
+        margin: 0 32px;
+        text-align: center;
+    }
+
+    #timesharing .prenajom-top a {
+        text-align: center;
+        margin: 0 32px;
+    }
+
+    #timesharing .prenajom-top .divider {
+        /* margin: 56px 0; */
+        margin: 32px;
+        max-width: 200px;
+    }
+
+    #timesharing .prenajom-unas a {
+        text-align: center;
+        margin: 32px;
+    }
+
+    .kvalifikacia-prenajom img {
+        /* max-width: 200px; */
+        max-width: 100px;
+    }
+
+    .kvalifikacia-prenajom a {
+        text-align: center;
+        margin: 32px;
+    }
+
+    .pripraveny-sherovat h2 {
+        text-align: center;
+    }
+
+    .pripraveny-sherovat img {
+        max-width: 200px;
+    }
+
+    /* Prvok | http://localhost:1488/prenajom-naveky */
+
+    div.person:nth-child(7) {
+        flex-direction: column-reverse;
+    }
+
+
+
+
+    .home-novinky .articles a,
+    .main-novinky .articles a {
+        min-width: unset;
+        min-width: unset;
+        width: 100%;
+        margin: 16px 32px;
+    }
+
+    #timesharing .prenajom-benefity .benefit img {
+        max-height: 40px;
+    }
+
+
+    .kontakt-top-section {
+        flex-flow: row wrap;
+    }
+
+    .kontakt-top-section .contact-box {
+        margin: 32px;
+        width: 100%;
+    }
+
+    .kontakt-wrapper .seller {
+        padding: 32px;
+        width: 100%;
+    }
+
+
+}
+
+@media screen and (max-width: 900px) {
+
+    .home-kupa-prenajom .container {
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .home-kupa-prenajom .element {
+        width: 100%;
+    }
+
+    .home-kupa-prenajom .element h3 {
+        text-align: center;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    .floor-detail .content .table .parameters {
+        padding: 0;
+    }
+
+
+    .home-location .container {
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-location {
+        padding: 56px 32px;
+    }
+
+    .home-location>div:nth-child(1)>img:nth-child(1) {
+        max-width: 130px;
+        margin-bottom: 32px;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .home-location .container {
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .home-location {
+        /* padding: 72px 56px; */
+        padding: 56px 32px;
+    }
+
+    /* Prvok | http://localhost:1488/kontakt */
+
+    .home-location>div:nth-child(1)>img:nth-child(1) {
+        max-width: 150px;
+        margin-bottom: 32px;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .property-detail {
+        /* justify-content: space-between; */
+        /* max-width: 1158px; */
+        justify-content: center;
+        max-width: unset;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .property-detail .content {
+        /* max-width: 300px; */
+        max-width: 100%;
+        width: 100%;
+        margin: 32px 0;
+    }
+
+    .property-detail-main .container.detail-container {
+        width: 100%;
+    }
+
+    .property-detail-main {
+        width: 100%;
+    }
+
+    .floor-detail .container {
+        flex-direction: column-reverse;
+    }
+
+    .floor-detail .podorys-img {
+        /* max-width: 500px; */
+        /* margin: 0 56px; */
+        /* margin: 0 32px; */
+        max-width: 250px;
+        margin: 32px 0;
+        align-self: center;
+    }
+
+    .floor-detail .content .table {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .floor-detail .content {
+        /* margin: 0 56px; */
+        margin: 32px 0;
+        width: 100%;
+    }
+
+    .floor-detail {
+        /* margin: 120px 0; */
+        margin: 32px 0;
+        width: 100%;
+    }
+
+    .backButton {
+        /* margin: 56px; */
+        margin: 16px;
+    }
+
+    .property-detail-main .dividertwo {
+        /* margin: 120px 0; */
+        margin: 32px 0;
+    }
+
+    /* Prvok | http://localhost:1488/dvoj-apart-dom/1 */
+
+    section.floor-detail:nth-child(9)>div:nth-child(1) {
+        flex-direction: column;
+    }
+
+    /* Prvok | http://localhost:1488/dvoj-apart-dom/1 */
+
+    section.floor-detail:nth-child(11)>div:nth-child(1) {
+        flex-direction: column;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .properties .apart {
+        /* margin-bottom: 120px; */
+        margin-bottom: 56px;
+        flex-direction: column;
+    }
+
+    .properties .apart .content {
+        /* width: 35%; */
+        width: 100%;
+    }
+
+    .properties .img-link {
+        /* max-width: 65%; */
+        max-width: 100%;
+    }
+
+    .properties {
+        /* padding: 120px 0; */
+        padding: 120px 0 0 0;
+    }
+
+
+
+}
+
+#topBurger {
+    display: none;
+    position: relative;
+    margin: 40px 50px;
+    cursor: pointer;
+    width: 34px;
+    height: 24px;
+    background: #fff;
+
+    span {
+        display: block;
+        background: black;
+        height: 3px;
+        width: 33px;
+        position: absolute;
+        transition: all 0.5s ease;
+    }
+
+    span:nth-child(1) {
+        top: 0px;
+    }
+
+    span:nth-child(2) {
+        top: 10px;
+    }
+
+    span:nth-child(3) {
+        top: 20px;
+    }
+
+    .transparent {
+        opacity: 0;
+    }
+
+    .rotate-top {
+        transform: rotatez(45deg);
+        -webkit-transform-origin: 0%;
+        left: 2px
+    }
+
+    .rotate-bottom {
+        transform: rotatez(-45deg);
+        -webkit-transform-origin: 15%;
+    }
+}
+
+.topNavigation {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mobileNavigation {
+    display: none;
+}
+
+@media screen and (max-width: 1250px) {
+    #topBurger {
+        display: block;
+    }
+
+    .topNavigation {
+        display: none;
+    }
+
+    .mobileNavigation {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        position: absolute;
+        background: #fff;
+        height: 100vh;
+        top: 0;
+        padding-top: 56px;
+        right: -100%;
+        transition: all 0.3s ease-in-out;
+
+        &.active {
+            right: 0;
+        }
+    }
+
+    header ul {
+        justify-content: space-between;
+        flex-direction: column;
+        max-height: 70%;
+        height: 100%;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header nav {
+        height: 100%;
+        padding-top: 32px;
+    }
+
+    #topBurger {
+        margin: 16px;
+    }
+
+    header .language-selector {
+        position: absolute;
+        bottom: 56px;
+    }
+
+    header ul a {
+        font-size: 0.9em;
+    }
+
+    .header-container {
+        img {
+            max-width: 150px;
+        }
+
+        position: relative;
+        z-index: 2;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .hero-section .content {
+        /* max-width: 50%; */
+        /* padding: 72px 56px; */
+        max-width: 100%;
+        padding: 32px;
+    }
+
+    .hero-section .container {
+        /* background-image: url("../img/hore-house.png"); */
+        background-image: unset;
+    }
+
+    .hero-section .hero-logo {
+        /* max-width: 220px; */
+        max-width: 150px;
+    }
+
+    .hero-section .main-headline h1 {
+        /* font-size: 1.6em; */
+        font-size: 1.1em;
+    }
+
+    .hero-section p {
+        /* font-size: 1.3em; */
+        /* margin-bottom: 32px; */
+        font-size: 1.1em;
+        margin-bottom: 16px;
+        text-align: center;
+    }
+
+    .hero-section .main-headline {
+        /* margin: 48px 0; */
+        margin: 32px 0;
+    }
+
+    .hero-section .hero-ctas .orange-cta {
+        /* padding: 16px 32px; */
+        padding: 8px 16px;
+        text-align: center;
+        margin: 16px;
+    }
+
+    .hero-section .hero-ctas .basic-cta {
+        /* padding: 16px 32px; */
+        padding: 8px 16px;
+        text-align: center;
+        margin: 16px;
+    }
+
+    .hero-section .hero-ctas {
+        /* margin: 56px 0; */
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero-section .main-headline img {
+        /* margin: 0 32px; */
+        margin: 0 16px;
+    }
+
+    .hero-section .home-hero-arrow {
+        /* margin-left: -79.5px; */
+        /* margin-top: -80px; */
+        margin-left: -50px;
+        margin-top: -50px;
+        max-width: 100px;
+    }
+
+    .home-about h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    .home-about .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .home-counters .counter strong {
+        /* font-size: 2.5em; */
+        /* margin-bottom: 40px; */
+        font-size: 2em;
+        margin-bottom: 24px;
+    }
+
+    @media screen and (max-width: 500px) {
+        .home-counters {
+            margin: 56px 0;
+        }
+
+        .home-novinky .articles a,
+        .main-novinky .articles a {
+            margin: 16px 0;
+        }
+    }
+
+    .home-counters .counter {
+        padding: 32px;
+        width: 100%;
+    }
+
+    .home-counters .counters {
+        margin: 0 32px;
+    }
+
+    .home-kupa-prenajom .element h3 {
+        font-size: 2em;
+    }
+
+    .home-kupa-prenajom .element img {
+        margin: 32px;
+        max-width: 150px;
+    }
+
+    .home-kupa-prenajom .element {
+        min-width: unset;
+    }
+
+    .home-kupa-prenajom .container {
+        margin: 72px 16px;
+    }
+
+    .home-aktivity .container {
+        background-image: unset;
+        margin-right: 0;
+    }
+
+    .home-aktivity .content {
+        padding: 56px 32px;
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .home-aktivity .content h2 {
+        font-size: 2em;
+    }
+
+    .home-aktivity .content img {
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .home-novinky h2,
+    .main-novinky h2 {
+        font-size: 2em;
+    }
+
+    .home-novinky .divider,
+    .main-novinky .divider {
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .home-galeria h2,
+    .main-galeria h2 {
+        font-size: 2em;
+    }
+
+    .home-galeria .divider,
+    .main-galeria .divider {
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .home-realizovane .container h3 {
+        font-size: 2em;
+    }
+
+    .home-realizovane .container .divider {
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .home-about {
+        margin: 56px 32px;
+        padding-top: 120px;
+    }
+
+    .home-aktivity {
+        background-size: cover;
+    }
+
+    .home-long-bg .container-long {
+        background-image: unset;
+        margin-top: 0;
+    }
+
+    .home-novinky .container,
+    .main-novinky .container {
+        padding: 56px 32px;
+    }
+
+    .home-galeria,
+    .main-galeria {
+        padding: 56px 0;
+    }
+
+    .home-long-bg {
+        background-image: unset;
+        background-size: cover;
+    }
+
+    .counters>a:nth-child(1) {
+        width: 100%;
+    }
+
+    .counters>a:nth-child(2) {
+        width: 100%;
+    }
+
+    .counters>a:nth-child(3) {
+        width: 100%;
+    }
+
+    .counters>a:nth-child(4) {
+        width: 100%;
+    }
+
+
+    .hero-section .hero-ctas {
+        margin: 32px 0;
+    }
+
+
+    .home-about {
+        padding-top: 0;
+    }
+
+    .home-kupa-prenajom .element {
+        min-height: unset;
+    }
+
+}
+
+@media screen and (max-width: 1000px) {
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .ponuka-nehnutelnosti {
+        /* padding-top: 114px; */
+        /* margin-top: -114px; */
+        padding-top: 72px;
+        margin-top: -72px;
+    }
+
+    .ponuka-nehnutelnosti .ponuka-card {
+        /* width: 33.3333333333%; */
+        width: 100%;
+    }
+
+    .ponuka-nehnutelnosti .container {
+        flex-direction: column;
+    }
+
+    .ponuka-nehnutelnosti section span {
+        /* font-size: 2em; */
+        font-size: 1.5em;
+    }
+
+    .ponuka-nehnutelnosti section img {
+        /* margin-top: 40px; */
+        /* max-width: 200px; */
+        margin-top: 24px;
+        max-width: 100px;
+    }
+
+    .ponuka-nehnutelnosti .ponuka-card .bg-img-card {
+        /* width: auto; */
+        width: 100%;
+        object-fit: cover;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    #timesharing {
+        /* padding: 120px 0; */
+        /* background-size: contain; */
+        padding: 56px 0;
+        background-size: auto;
+    }
+
+    #timesharing .prenajom-top h1 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    #timesharing .prenajom-top p {
+        /* font-size: 1.1em; */
+        font-size: 1em;
+    }
+
+    #timesharing .prenajom-top .divider {
+        /* max-width: 200px; */
+        max-width: 150px;
+    }
+
+    .pripraveny-sherovat img {
+        /* max-width: 200px; */
+        max-width: 150px;
+    }
+
+    .prenajom-stalenic .person-p {
+        margin: 0 32px;
+    }
+
+    .prenajom-stalenic span {
+        /* margin: 56px 32px; */
+        margin: 32px;
+    }
+
+    #timesharing .prenajom-top a {
+        /* padding: 16px 56px; */
+        padding: 16px;
+    }
+
+    #timesharing .prenajom-benefity {
+        /* padding: 120px 0; */
+        padding: 56px 0;
+    }
+
+    #timesharing .prenajom-benefity a {
+        /* padding: 16px 56px; */
+        padding: 16px;
+    }
+
+    #timesharing .prenajom-unas h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    #timesharing .prenajom-unas {
+        /* margin: 120px 0; */
+        margin: 56px 0;
+    }
+
+    #timesharing .prenajom-unas img {
+        /* max-width: 150px; */
+        max-width: 100px;
+    }
+
+    #timesharing .prenajom-unas a {
+        /* padding: 16px 56px; */
+        padding: 16px;
+    }
+
+    .kvalifikacia-prenajom {
+        /* background-size: contain; */
+        /* padding: 120px 0; */
+        background-size: auto;
+        padding: 56px 0;
+    }
+
+    .kvalifikacia-prenajom a {
+        /* padding: 16px 56px; */
+        padding: 16px;
+    }
+
+    .pripraveny-sherovat h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    .pripraveny-sherovat {
+        /* padding: 160px 0; */
+        padding: 80px 0;
+    }
+
+    .prenajom-stalenic h3 {
+        /* font-size: 1.5em; */
+        font-size: 1.2em;
+    }
+
+    .prenajom-stalenic .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .prenajom-stalenic p {
+        /* font-size: 1.1em; */
+        font-size: 1em;
+    }
+
+    .prenajom-stalenic .cards {
+        /* margin: 120px 0; */
+        margin: 56px 0;
+    }
+
+    .prenajom-stalenic .cards .card {
+        /* padding: 80px; */
+        padding: 32px;
+    }
+
+    .prenajom-stalenic .cards .card p {
+        /* font-size: 1.1em; */
+        font-size: 1em;
+    }
+
+    .prenajom-stalenic .cards .card strong {
+        /* font-size: 1.5em; */
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .prenajom-stalenic .cards .card span {
+        /* margin-top: 16px; */
+        margin-top: 32px;
+    }
+
+    .kontakt-wrapper {
+        /* padding: 120px 0; */
+        padding: 56px 0;
+    }
+
+    .kontakt-wrapper .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .kontakt-wrapper h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    .kontakt-top-section {
+        /* margin-bottom: 120px; */
+        margin-bottom: 56px;
+    }
+
+    #timesharing .prenajom-benefity {
+        background-size: auto;
+    }
+
+
+}
+
+@media screen and (max-width: 800px) {
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .aktivity-main .home-aktivity .content {
+        /* padding: 250px 0; */
+        padding: 80px 0;
+    }
+
+    .home-aktivity {
+        /* background-size: cover; */
+        background-size: auto;
+    }
+
+    .aktivity-section h2 {
+        margin: 0 32px;
+    }
+
+    .home-aktivity {
+        /* box-shadow: inset 0px -33px 28px -32px rgba(0,0,0,0.44); */
+        box-shadow: unset;
+    }
+
+    .element-aktivity-wrapper {
+        display: none;
+    }
+
+    .aktivity-section {
+        /* padding: 120px 0; */
+        padding: 56px 0;
+    }
+
+    .aktivity-section h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .aktivity-section .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .aktivity-section .aktivity-img {
+        width: 100%;
+    }
+
+    .aktivity-section p {
+        margin: 0 32px;
+    }
+
+    .aktivity-section .two-column-section {
+        /* justify-content: space-evenly; */
+        /* margin: 120px 0; */
+        justify-content: center;
+        margin: 56px 0;
+        flex-direction: column;
+    }
+
+    .aktivity-section .two-column-section h3 {
+        text-align: center;
+    }
+
+    .aktivity-section .two-column-section p {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        text-align: center;
+    }
+
+    .aktivity-section .two-column-section a {
+        width: 100%;
+        display: block;
+        text-align: center;
+    }
+
+    .aktivity-section .two-column-section img {
+        width: 100%;
+    }
+
+    .aktivity-section .two-column-section .align-right {
+        /* align-items: flex-end; */
+        align-items: center;
+        margin: 56px 0;
+    }
+
+    .aktivity-section .two-column-section .align-right p {
+        /* text-align: right; */
+        text-align: center;
+    }
+
+    .aktivity-section-of-section .container {
+        /* padding: 120px 0; */
+        /* background-image: url("../img/main-aktivity-pattern.svg"); */
+        padding: 56px 0;
+        background-image: unset;
+    }
+
+    .aktivity-section-of-section .wrapper {
+        /* background-image: url("../img/main-aktivity-pattern.svg"); */
+        background-image: unsrt;
+    }
+
+    .aktivity-section-of-section h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    .aktivity-section-of-section .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .aktivity-section-of-section .aktivita {
+        /* max-width: 30%; */
+        max-width: 100%;
+        margin: 32px;
+    }
+
+    .aktivity-section-of-section .aktivity-wrapper {
+        /* max-width: 1300px; */
+        /* justify-content: space-between; */
+        max-width: 300px;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    div.two-column-section:nth-child(5)>div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 56px 0;
+    }
+
+    div.two-column-section:nth-child(5)>div:nth-child(1) {
+        width: 100%;
+    }
+
+    div.two-column-section:nth-child(6) {
+        flex-direction: column-reverse;
+    }
+
+    div.two-column-section:nth-child(7)>div:nth-child(2) {
+        margin-bottom: 56px;
+    }
+
+
+    @media screen and (max-width: 800px) {
+        section.floor-detail:nth-child(17)>div:nth-child(1) {
+            flex-direction: column;
+        }
+
+        div.two-column-section:nth-child(5)>div:nth-child(2) {
+            /* margin: 56px 0; */
+            margin: 55px 32px;
+        }
+
+        .aktivity-section .two-column-section .align-right {
+            /* margin: 56px 0; */
+            margin: 56px 32px;
+        }
+
+        div.two-column-section:nth-child(7)>div:nth-child(2) {
+            margin: 0 32px 56px 32px;
+        }
+    }
+
+    .aktivity-section .two-column-section a {
+        /* padding: 16px 56px; */
+        padding: 16px;
+    }
+
+    .aktivity-section-of-section .wrapper {
+        /* background-image: url("../img/main-aktivity-pattern.svg"); */
+        background-image: unset;
+    }
+
+    .main-novinky {
+        background-size: auto;
+    }
+
+    .oprojekte-big-bg {
+        background-size: auto;
+    }
+
+
+    .main-galeria {
+        /* background-size: contain; */
+        background-size: auto;
+    }
+
+    .main-galeria .homegallery {
+        /* margin-top: 80px; */
+        margin-top: 56px;
+    }
+
+    .kontakt-wrapper {
+        background-size: auto 800px;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .properties h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    @media screen and (max-width: 800px) {
+        .backButton {
+            /* margin: 16px; */
+            margin: 0;
+            max-width: 110px;
+        }
+    }
+
+    .properties {
+        /* background-size: contain; */
+        background-size: auto;
+    }
+
+    .properties .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .properties .apart h4 {
+        /* font-size: 2em; */
+        font-size: 1.5em;
+    }
+
+    .properties .apart .element {
+        max-width: 100px;
+    }
+
+    .properties .apart .ctas a {
+        /* font-size: 1.4em; */
+        /* padding: 16px 56px; */
+        font-size: 1em;
+        padding: 16px;
+    }
+
+    .properties .apart .ctas a:first-child {
+        /* margin-right: 40px; */
+        margin-right: 0;
+        margin: 0 16px;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .property-detail-main {
+        /* background-size: contain; */
+        background-size: auto;
+    }
+
+    .property-detail-main .divider {
+        max-width: 150px;
+    }
+
+    .headliner-before {
+        /* font-size: 2em; */
+        font-size: 1.5em;
+    }
+
+    .property-detail-main h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    @media screen and (max-width: 800px) {
+        .property-detail-main .dividertwo {
+            max-width: 100px;
+        }
+
+        .floor-detail .container {
+            width: 100%;
+        }
+    }
+
+    .floor-detail .floor-divider {
+        /* max-width: 300px; */
+        max-width: 150px;
+    }
+
+    .floor-detail .content .table table {
+        width: 100%;
+    }
+
+    th,
+    td {
+        font-size: 0.8em;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .floor-detail .content th,
+    .floor-detail .content td {
+        /* padding: 16px 24px; */
+        padding: 16px 8px;
+    }
+
+    .floor-detail .content .table .severka p,
+    .floor-detail .content .table .severka img {
+        /* max-width: 60px; */
+        max-width: 30px;
+    }
+
+    .floor-detail .content .ctas a {
+        /* padding: 16px 56px; */
+        /* font-size: 1.2em; */
+        padding: 16px;
+        font-size: 1em;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .floor-subpage {
+        /* background-size: contain; */
+        background-size: auto;
+    }
+
+    .floor-subpage .top-section h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+    }
+
+    .floor-subpage .top-section img {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .floor-detail .content h3 {
+        /* font-size: 2em; */
+        font-size: 1.5em;
+    }
+
+    .floor-detail .content .table .parameters {
+        width: 100%;
+    }
+
+    /* Prvok | http://localhost:1488/dvoj-apart-dom/1/prizemie */
+
+    section.floor-detail:nth-child(5)>div:nth-child(1) {
+        flex-direction: column;
+    }
+
+
+    /* style.min.css | http://localhost:1488/assets/css/style.min.css */
+
+    .big-section a {
+        /* font-size: 1.2em; */
+        /* padding: 16px 56px; */
+        font-size: 1em;
+        padding: 16px;
+    }
+
+    .detail-prices {
+        /* align-items: flex-start; */
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .detail-subpage-sellers h2 {
+        /* font-size: 2.5em; */
+        font-size: 2em;
+        text-align: center;
+    }
+
+    .detail-subpage-sellers .divider {
+        /* margin: 56px 0 80px 0; */
+        margin: 32px 0;
+        max-width: 150px;
+    }
+
+    .apt-detail-gallery-buttons {
+        /* margin-top: 120px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apt-detail-gallery-buttons a {
+        /* padding: 24px 48px; */
+        /* margin: 0 32px; */
+        padding: 16px;
+        margin: 16px 32px;
+    }
+}
+
+.cta-nehnutelnosti {
+    border: 2px solid #000;
+
+    margin-top: 32px;
+    padding: 16px;
+    font-weight: bold;
+
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+        color: lighten(#000, 75);
+        border: 2px solid lighten(#000, 75);
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .floor-detail .content .table .severka p,
+    .floor-detail .content .table .severka img {
+        max-width: 40px;
+    }
+
+    .floor-detail .content .table .severka {
+        width: 100%;
+    }
+
+    .floor-detail .content .table .parameters img {
+        padding: 16px;
+    }
+
+    .floor-detail .content .table .parameters ul {
+        margin-right: 0;
+    }
+
+    .floor-detail .content .table .severka p,
+    .floor-detail .content .table .severka img {
+        max-width: 40px;
+    }
+
+    .floor-detail .content .table .parameters ul li strong {
+        font-size: 0.8em;
+    }
+
+    .floor-detail .content .table .parameters ul li {
+        font-size: 1em;
+    }
+
+    .floor-detail .content .table .parameters {
+        justify-content: center;
+    }
+
+    .floor-detail .podorys-img {
+        max-width: unset;
+        align-self: center;
+    }
+
+    .kvalifikacia-prenajom ul {
+        align-items: flex-start;
+        margin-left: 24px;
+    }
+
+    .main-vsetky-aktivity .aktivity-section-of-section {
+        background-size: auto;
+    }
+}
+
+.prenajom-stalenic .cards .card span strong {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 1250px) {
+
+
+    header .language-selector {
+        position: unset;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 32px 0;
+    }
+
+    header nav {
+        height: unset;
+    }
+
+    .mobileNavigation {
+        justify-content: flex-start;
+        overflow: scroll;
+    }
+
+    header ul li {
+        margin: 8px 0;
+    }
+
+    header .language-selector .another-laguages {
+        padding: unset;
+        position: unset;
+        flex-direction: unset;
+        justify-content: unset;
+        align-items: center;
+        margin-top: 0;
+
+        background: transparent;
+        box-shadow: unset;
+        display: flex;
+        flex-flow: row wrap;
+        max-width: 170px;
+        justify-content: center;
+    }
+
+    header .language-selector .another-laguages a {
+        transition: unset;
+        border: 1px solid $lightblue;
+        border-radius: 8px;
+        font-weight: 600;
+        padding: 4px 8px;
+        color: $lightblue;
+        cursor: pointer;
+        display: block;
+        background: transparent;
+        margin: 4px;
+    }
+
+    header .language-selector .selected-language {
+        border: 1px solid $lightgreen;
+        color: $lightgreen;
+        display: block;
+        margin-bottom: 16px;
+    }
+
+    header .header-container {
+        background: #fff;
+    }
+
+    header {
+        box-shadow: 0px 6px 23px 0px rgba(0, 0, 0, 0.25);
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    .home-aktivity .content strong {
+        text-align: center;
+    }
+
+    .copyright .container {
+        /* padding: 32px; */
+        padding: 32px 0;
+        flex-flow: row wrap;
+        max-width: 310px;
+        margin: 0 auto;
+    }
+
+    .copyright .container span {
+        /* margin: 16px 0; */
+        margin: 16px;
+    }
+
+    .copyright .container a {
+        margin: 16px;
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    .properties .apart .content {
+        /* padding: 32px 56px; */
+        padding: 32px 16px;
+    }
+
+    .properties .apart .parameters ul li {
+        /* font-size: 1.1em; */
+        font-size: 0.9em;
+    }
+
+    .properties .aparts {
+        /* width: 100%; */
+        width: 95%;
+    }
+
+    .properties .apart .ctas a {
+        /* padding: 16px; */
+        padding: 16px 32px;
+    }
+
+    .properties .apart .ctas a:first-child {
+        /* margin: 0 16px; */
+        margin: 0 8px;
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    .property-detail {
+        /* width: 100%; */
+        width: 95%;
+    }
+
+    .floor-detail .content .table {
+        /* width: 100%; */
+        width: 95%;
+    }
+
+    .floor-detail .content .table table {
+        /* margin: 16px; */
+        padding: 16px;
+    }
+
+    .podorys-link {
+        /* margin: 0 56px; */
+        margin: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .floor-detail .podorys-img {
+        /* width: 100%; */
+        width: 95%;
+        align-self: center;
+    }
+
+    .floor-detail .content .ctas a {
+        /* padding: 16px; */
+        padding: 16px 40px;
+    }
+
+    .floor-detail .content .ctas a {
+        /* margin: 0 16px; */
+        margin: 0 8px;
+    }
+
+    .special-table .special-table-container a span {
+        /* font-size: 1.2em; */
+        font-size: 1em;
+    }
+
+    .special-table .special-table-container a img {
+        max-width: 20px;
+    }
+
+    .floor-detail .content span {
+        /* margin-bottom: 8px; */
+        margin-bottom: 0;
+    }
+
+    section.floor-detail:nth-child(4)>div:nth-child(1)>a:nth-child(1) {
+        display: flex;
+        justify-content: center;
+    }
+
+    section.floor-detail:nth-child(5)>div:nth-child(1)>a:nth-child(2) {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .detail-prices {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .detail-subpage-sellers .sellers {
+        width: 95%;
+        flex-direction: column;
+    }
+
+    .detail-subpage-sellers .seller {
+        width: 100%;
+    }
+
+    .apt-detail-gallery-buttons {
+        margin-top: 40px;
+    }
+
+}
+
+@media screen and (max-width: 800px) {
+    .home-about .advantage img {
+        max-height: 40px;
+    }
+
+    .aktivity-section .two-column-section {
+        margin-bottom: 0;
+    }
+
+    .floor-detail .content .table .severka p,
+    .floor-detail .content .table .severka img {
+        max-width: 50px;
+    }
+
+    .o-projekte-main .home-galeria p {
+        margin: 0 32px 56px 32px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+
+    .floor-detail .content th,
+    .floor-detail .content td {
+        text-align: left;
+        text-align: center;
+    }
+}
+
+body {
+    margin-top: 114px;
+
+    @media screen and (max-width: 1250px) {
+        margin-top: 72px;
+    }
+}
+
+header {
+    position: fixed;
+}
+
+@media screen and (max-width: 800px) and (min-width: 500px) {
+
+    .counters>a:nth-child(1) {
+        /* width: 100%; */
+        width: 45%;
+    }
+
+    .counters>a:nth-child(2) {
+        /* width: 100%; */
+        width: 45%;
+    }
+
+    .counters>a:nth-child(3) {
+        /* width: 100%; */
+        width: 45%;
+    }
+
+    .counters>a:nth-child(4) {
+        /* width: 100%; */
+        width: 45%;
+    }
+
+    .floor-detail .content .table .parameters img {
+        padding-right: 0;
+        width: 100%;
+        max-width: 230px;
+    }
+
+    .kontakt-wrapper h2 {
+        margin-top: 56px;
+    }
+
+    .home-aktivity .content img {
+        max-width: 190px;
+    }
+
+    .home-galeria .divider,
+    .main-galeria .divider {
+        /* max-width: 150px; */
+        max-width: 190px;
+    }
+
+    .home-aktivity .content img {
+        /* max-width: 150px; */
+        max-width: 190px;
+    }
+
+    .home-about .divider {
+        /* max-width: 150px; */
+        max-width: 190px;
+    }
+
+    .home-kupa-prenajom .element img {
+        max-width: 190px;
+    }
+
+    .home-novinky .divider,
+    .main-novinky .divider {
+        max-width: 190px;
+    }
+
+    .home-realizovane .container .divider {
+        max-width: 190px;
+    }
+
+    #timesharing .prenajom-top .divider {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 190px;
+    }
+
+    #timesharing .prenajom-top p {
+        /* margin: 24px 0; */
+        margin: 24px 32px;
+    }
+
+    .pripraveny-sherovat img {
+        /* margin: 56px 0; */
+        margin: 32px 0;
+        max-width: 190px;
+    }
+
+    .kontakt-wrapper .divider {
+        /* max-width: 150px; */
+        max-width: 190px;
+    }
+
+
+    .aktivity-section .divider {
+        max-width: 190px;
+    }
+
+    .aktivity-section-of-section .divider {
+        max-width: 190px;
+    }
+
+    .properties .divider {
+        /* max-width: 150px; */
+        max-width: 190px;
+    }
+
+    .property-detail-main .divider {
+        /* max-width: 150px; */
+        max-width: 190px;
+    }
+
+    .floor-detail .floor-divider {
+        max-width: 190px;
+    }
+
+    .floor-subpage .top-section img {
+        max-width: 190px;
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    #timesharing .prenajom-benefity .benefit img {
+        /* max-height: 60px; */
+        max-height: 40px;
+    }
+
+    #timesharing .prenajom-benefity .benefit {
+        /* margin: 32px 56px; */
+        margin: 32px;
+    }
+
+    #timesharing .prenajom-unas p {
+        margin: 0 32px;
+    }
+
+    .kvalifikacia-prenajom p {
+        /* margin: 56px 0; */
+        margin: 56px 32px;
+    }
+
+    .kvalifikacia-prenajom .kvalifikovany-divisions {
+        /* margin: 0 56px; */
+        margin: 0 32px;
+    }
+
+    .pripraveny-sherovat .nehnutelnosti-prenajom {
+        flex-direction: column;
+    }
+
+    .pripraveny-sherovat .nehnutelnost-prenajom {
+        /* width: 33%; */
+        width: 95%;
+    }
+
+    .prenajom-stalenic .person {
+        flex-direction: column;
+    }
+
+    .prenajom-stalenic .person-p {
+        /* margin-left: 120px; */
+        margin-left: 0;
+    }
+
+    .person-p-bottom {
+        /* margin-right: 120px; */
+        margin-right: é;
+        margin-bottom: 32px;
+    }
+
+    .prenajom-stalenic span {
+        text-align: center;
+        margin: 0 32px;
+    }
+
+    .prenajom-stalenic .cards {
+        flex-direction: column;
+    }
+
+    .aktivity-section .two-column-section img {
+        margin-top: 40px;
+    }
+
+    .prenajom-stalenic .cards .card {
+        /* width: 50%; */
+        width: unset;
+    }
+
+    .prenajom-stalenic p {
+        text-align: center;
+        margin: 0 32px;
+    }
+
+    .prenajom-stalenic .bottom-person p {
+        /* margin: 32px 0; */
+        margin: 32px;
+    }
+
+    div.person:nth-child(7) {
+        flex-direction: column-reverse;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    div.two-column-section:nth-child(7)>div:nth-child(2) {
+        /* margin: 0 32px 56px 32px; */
+        margin: 56px 32px 56px 32px;
+    }
+
+    .o-projekte-main .home-counters h2 {
+        font-size: 2em;
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    @media screen and (max-width: 500px) {
+        .kontakt-top-section .contact-box {
+            /* width: 100%; */
+            width: 95%;
+        }
+    }
+
+    .kontakt-top-section .contact-box span a {
+        /* font-size: 1.3em; */
+        font-size: 1.1em;
+    }
+
+    .kontakt-wrapper h2 {
+        margin: 0 32px;
+    }
+
+    @media screen and (max-width: 800px) {
+        .kontakt-top-section .contact-box {
+            /* width: 100%; */
+            width: 95%;
+        }
+
+        #gdprpopup .container {
+            top: 850px;
+        }
+    }
+
+    .kontakt-top-section .contact-box span a {
+        /* font-size: 1.3em; */
+        font-size: 1.1em;
+    }
+
+    .kontakt-wrapper h2 {
+        margin: 0 32px;
+    }
+
+    .home-location>div:nth-child(1)>img:nth-child(1) {
+        /* max-width: 150px; */
+        max-width: 200px;
+    }
+
+
+    /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+    .property-detail .content span {
+        /* font-size: 1.1em; */
+        font-size: 1em;
+    }
+
+    .property-detail .content span,
+    .property-detail .content strong {
+        /* font-size: 1.3em; */
+        font-size: 1.1em;
+    }
+
+    .property-detail .content li {
+        /* padding: 24px 0; */
+        padding: 16px 0;
+    }
+
+    .floor-detail .content th,
+    .floor-detail .content td {
+        padding: 8px;
+    }
+
+    .smaller-podorys {
+        width: 80% !important;
+    }
+
+    .floor-detail .content .table .parameters ul {
+        padding: 16px;
+    }
+
+
+    .floor-detail .content .table .parameters ul li {
+        margin: 16px 0;
+    }
+
+    .detail-subpage-sellers h2 {
+        margin: 0 32px;
+    }
+
+    .detail-bytu-big-bg {
+        background-size: auto;
+    }
+
+
+}
+
+@media screen and (min-width: 2200px) {
+    .hero-section .container {
+        background-size: 80vmin;
+        background-position: 1200px bottom;
+    }
+
+
+    @media screen and (min-width: 2000px) {
+        .home-aktivity .container {
+            background-size: 45vmin;
+        }
+
+
+        .home-aktivity {
+            background-size: cover;
+        }
+
+        .home-long-bg {
+            background-size: cover;
+        }
+
+        #timesharing .prenajom-benefity {
+            background-size: cover;
+        }
+
+        .kvalifikacia-prenajom {
+            background-size: cover;
+        }
+
+        .prenajom-big-bg {
+            background-size: cover;
+        }
+
+
+        .oprojekte-big-bg {
+            background-size: cover;
+        }
+
+
+        .main-galeria {
+            background-size: cover;
+        }
+
+
+        /* style.min.css | http://localhost:8888/assets/css/style.min.css */
+
+        .properties {
+            /* background-size: contain; */
+            background-size: cover;
+        }
+
+
+    }
+
+    @media screen and (max-width: 800px) {
+
+        .pripraveny-sherovat .nehnutelnost-prenajom img {
+            max-width: 130px;
+        }
+
+        .prenajom-stalenic .person img {
+            max-width: 200px;
+        }
+
+        .prenajom-big-bg {
+            background-size: auto;
+        }
+
+        .prenajom-stalenic span {
+            padding-top: 56px;
+        }
+
+
+        .prenajom-stalenic .cards .card img {
+            margin: 16px;
+        }
+
+        .prenajom-stalenic span {
+            padding-top: 0;
+        }
+
+        .prenajom-stalenic .cards .card p {
+            line-height: 25px;
+        }
+
+        .prenajom-stalenic .bottom-person img {
+            max-width: 200px;
+        }
+
+        #timesharing .prenajom-benefity .benefit {
+            width: 30%;
+        }
+
+    }
+
+    @media screen and (max-width: 2200px) {
+        .home-aktivity .container {
+            background-position: 1160px bottom;
+        }
+
+        .home-aktivity .container {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    .home-aktivity .content {
+        margin-left: -700px;
+    }
+}
+
+.blue-twocolumn img {
+    border: none !important;
+}
+
+.orange-twocolumn img {
+    border: none !important;
+}
+
+.green-twocolumn img {
+    border: none !important;
+}
+
+.aktivity-section .two-column-section img {
+    box-shadow: unset !important;
+    filter: drop-shadow(0px 0px 32px 0px rgba(0, 0, 0, 0.34)) !important;
+}
+
+@media screen and (max-width: 800px) {
+    .pripraveny-sherovat h2 {
+        margin: 0 32px;
+    }
+
+    .prenajom-stalenic h3 {
+        margin: 0 32px;
+    }
+
+    .kontakt-top-section {
+        margin-bottom: 0;
+    }
+
+    .prenajom-stalenic .cards .card img {
+        margin: 16px 32px 32px 32px;
+    }
+
+    div.two-column-section:nth-child(5)>div:nth-child(2) {
+        margin: 32px 32px 55px 32px;
+    }
+
+    .aktivity-section .two-column-section .align-right {
+        margin: 32px 32px 55px 32px;
+    }
+
+    .subsection-floordetail {
+        padding-bottom: 0;
+    }
+
+    .detail-subpage-sellers .seller {
+        width: 95%;
+    }
+
+    .detail-subpage-sellers .seller {
+        margin: 24px 0;
+    }
+
+    .property-detail-main .main-form {
+        margin-top: 0px;
+    }
+
+    .detail-subpage-sellers {
+        margin: 56px 0 32px 0;
+    }
+
+	.floor-detail .content .table {
+		max-width: 600px;
+	}
+
+	.podorys-img {
+		max-width: 500px !important;
+	}
+}
+
+  .home-galeria .homegallery a, .main-galeria .homegallery a {
+	max-width: 400px;
+	max-height: 230px;
+	overflow: hidden;
+  }
+
+  @media screen and ( max-width: 400px ) {
+	.home-galeria .homegallery a, .main-galeria .homegallery a {
+		max-width: 400px;
+		max-height: 230px;
+		max-width: 90vw;
+		max-height: 100%;
+		}
+  }

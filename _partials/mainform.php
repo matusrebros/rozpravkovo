@@ -18,6 +18,7 @@
 						<input type="text" placeholder="Meno a Priezvisko">
 						<input type="email" placeholder="Email">
 						<input type="number" placeholder="Tel. č.">
+						<textarea rows="4" placeholder="Správa"></textarea>
 						<label>
 							<input type="checkbox">
 							<span>Súhlasím so spracovaním <a id="gdprshow">osobných údajov</a></spa>

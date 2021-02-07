@@ -18,9 +18,9 @@
 					<div class="parameters">
 						<img src="/assets/img/floor-detail-img.jpg">
 						<ul>
-							<li><strong>úžitková plocha</strong></li>
+							<li><strong>Úžitková plocha</strong></li>
 							<li>32,8 m2</li>
-							<li><strong>terasa</strong></li>
+							<li><strong>Terasa (spolu)</strong></li>
 							<li>15,1 m2</li>
 						</ul>
 					</div>
@@ -46,9 +46,9 @@
 					<div class="parameters">
 						<img src="/assets/img/floor-detail-img.jpg">
 						<ul>
-							<li><strong>úžitková plocha</strong></li>
+							<li><strong>Úžitková plocha</strong></li>
 							<li>32,8 m2</li>
-							<li><strong>terasa</strong></li>
+							<li><strong>Terasa (spolu)</strong></li>
 							<li>15,1 m2</li>
 						</ul>
 					</div>
@@ -76,9 +76,9 @@
 					<div class="parameters">
 						<img src="/assets/img/floor-detail-img.jpg">
 						<ul>
-							<li><strong>úžitková plocha</strong></li>
+							<li><strong>Úžitková plocha</strong></li>
 							<li>32,8 m2</li>
-							<li><strong>terasa</strong></li>
+							<li><strong>Terasa (spolu)</strong></li>
 							<li>15,1 m2</li>
 						</ul>
 					</div>

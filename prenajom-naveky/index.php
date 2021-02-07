@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<header id="mainheader">
+<header id="mainheader">
 		<div id="mainbanner" class="announcement-banner">
 			<div class="container-banner">
 				<strong>Už v Predaji!</strong>
@@ -23,40 +23,86 @@
 			<a href="/">
 				<img src="/assets/img/main-logo.svg">
 			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
-					</li>
-					<li>
-						<a class="active" href="/prenajom-naveky">Prenájom Naveky</a>
-						<span>Time Sharing</span>
-					</li>
-					<li>
-						<a href="/aktivity">Aktivity</a>
-					</li>
-					<li>
-						<a href="/o-projekte">O projekte</a>
-					</li>
-					<li>
-						<a href="/novinky">Novinky</a>
-					</li>
-					<li>
-						<a href="/galeria">Galéria</a>
-					</li>
-					<li>
-						<a href="/kontakt">Kontakt</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="language-selector">
-				<span class="selected-language">SK</span>
-				<div class="another-laguages">
-					<a href="#">EN</a>
-					<a href="#">PL</a>
+			<div class="topNavigation">
+				<nav>
+					<ul>
+						<li>
+							<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+						</li>
+						<li>
+							<a href="/prenajom-naveky">Prenájom Naveky</a>
+							<span>Time Sharing</span>
+						</li>
+						<li>
+							<a href="/aktivity">Aktivity</a>
+						</li>
+						<li>
+							<a href="/o-projekte">O projekte</a>
+						</li>
+						<li>
+							<a href="/novinky">Novinky</a>
+						</li>
+						<li>
+							<a href="/galeria">Galéria</a>
+						</li>
+						<li>
+							<a href="/kontakt">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="languageSelector" class="language-selector">
+					<span id="currentLanguage" class="selected-language">SK</span>
+					<div class="another-laguages">
+						<a href="#">EN</a>
+						<a href="#">PL</a>
+					</div>
 				</div>
 			</div>
+
+			<div id="topBurger">
+				<span id="burgerThree"></span>
+				<span id="burgerTwo"></span>
+				<span id="burgerOne"></span>
+			</div>
 		</div>
+		<div id="mobileNavigation" class="topNavigation mobileNavigation">
+				<nav>
+					<ul>
+						<li>
+							<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+						</li>
+						<li>
+							<a href="/prenajom-naveky">Prenájom Naveky</a>
+							<span>Time Sharing</span>
+						</li>
+						<li>
+							<a href="/aktivity">Aktivity</a>
+						</li>
+						<li>
+							<a href="/o-projekte">O projekte</a>
+						</li>
+						<li>
+							<a href="/novinky">Novinky</a>
+						</li>
+						<li>
+							<a href="/galeria">Galéria</a>
+						</li>
+						<li>
+							<a href="/kontakt">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="languageSelector" class="language-selector">
+					<span id="currentLanguage" class="selected-language">SK</span>
+					<div class="another-laguages">
+						<a href="#">EN</a>
+						<a href="#">PL</a>
+						<a href="#">EN</a>
+						<a href="#">PL</a>
+						<a href="#">EN</a>
+					</div>
+				</div>
+			</div>
 	</header>
 
 
@@ -176,21 +222,21 @@
 					<strong>Dvoj-Apart-Dom</strong>
 					<img src="/assets/img/dvojdom-element.svg">
 				</div>
-				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
+				<img class="bg-img-card" src="/assets/img/dvojapart-bg.jpg">
 			</div>
 			<div class="nehnutelnost-prenajom apart-prenajom">
 				<div class="container">
 					<strong>Apart-Dom</strong>
 					<img src="/assets/img/apartdom-element.svg">
 				</div>
-				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
+				<img class="bg-img-card" src="/assets/img/apart-bg.png">
 			</div>
 			<div class="nehnutelnost-prenajom chata-prenajom">
 				<div class="container">
 					<strong>Chata</strong>
 					<img src="/assets/img/chata-element.svg">
 				</div>
-				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
+				<img class="bg-img-card" src="/assets/img/chaty-bg.png">
 			</div>
 		</div>
 	</section>
@@ -239,26 +285,26 @@
 		<img class="divider" src="/assets/img/home-about-element.svg">
 		<p>Vyberte si nehnuteľnosť</p>
 		<div class="nehnutelnosti-prenajom">
-			<div class="nehnutelnost-prenajom dvoj-apart-prenajom">
+		<div class="nehnutelnost-prenajom dvoj-apart-prenajom">
 				<div class="container">
 					<strong>Dvoj-Apart-Dom</strong>
 					<img src="/assets/img/dvojdom-element.svg">
 				</div>
-				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
+				<img class="bg-img-card" src="/assets/img/dvojapart-bg.jpg">
 			</div>
 			<div class="nehnutelnost-prenajom apart-prenajom">
 				<div class="container">
 					<strong>Apart-Dom</strong>
 					<img src="/assets/img/apartdom-element.svg">
 				</div>
-				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
+				<img class="bg-img-card" src="/assets/img/apart-bg.png">
 			</div>
 			<div class="nehnutelnost-prenajom chata-prenajom">
 				<div class="container">
 					<strong>Chata</strong>
 					<img src="/assets/img/chata-element.svg">
 				</div>
-				<img class="bg-img-card" src="/assets/img/home-gallery.jpg">
+				<img class="bg-img-card" src="/assets/img/chaty-bg.png">
 			</div>
 		</div>
 	</section>

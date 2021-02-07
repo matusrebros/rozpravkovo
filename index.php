@@ -109,7 +109,7 @@
 		<section class="home-aktivity homehome-aktivity">
 			<div class="container">
 				<div class="content">
-					<h2>Naše Aktivity</h2>
+					<h2>Aktivity</h2>
 					<img class="divider" src="/assets/img/home-about-element.svg">
 					<strong>Okolie nabité Rozprávkovými aktivitami</strong>
 					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Donec massa sapien faucibus et molestie ac. Semper quis lectus nulla at volutpat diam.</p>

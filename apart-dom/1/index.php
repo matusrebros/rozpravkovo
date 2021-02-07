@@ -42,8 +42,8 @@
 							  <tr>
 								<th>číslo<br>apartmánu</th>
 								<th>počet<br>izieb</th>
-								<th>výmera<br>interiér</th>
-								<th>výmera<br>exteriér</th>
+								<th>úžitková<br>plocha</th>
+								<th>terasa<br>(spolu)</th>
 							  </tr>
 							</thead>
 							<tbody>
@@ -92,8 +92,8 @@
 							  <tr>
 								<th>číslo<br>apartmánu</th>
 								<th>počet<br>izieb</th>
-								<th>výmera<br>interiér</th>
-								<th>výmera<br>exteriér</th>
+								<th>úžitková<br>plocha</th>
+								<th>terasa<br>(spolu)</th>
 							  </tr>
 							</thead>
 							<tbody>
@@ -144,8 +144,8 @@
 							  <tr>
 								<th>číslo<br>apartmánu</th>
 								<th>počet<br>izieb</th>
-								<th>výmera<br>interiér</th>
-								<th>výmera<br>exteriér</th>
+								<th>úžitková<br>plocha</th>
+								<th>terasa<br>(spolu)</th>
 							  </tr>
 							</thead>
 							<tbody>

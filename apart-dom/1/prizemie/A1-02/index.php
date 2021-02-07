@@ -15,9 +15,9 @@
 					<div class="parameters">
 						<img src="/assets/img/a1-02.png">
 						<ul>
-							<li><strong>úžitková plocha</strong></li>
+							<li><strong>Úžitková plocha</strong></li>
 							<li>32,8 m2</li>
-							<li><strong>terasa</strong></li>
+							<li><strong>Terasa (spolu)</strong></li>
 							<li>15,1 m2</li>
 						</ul>
 					</div>
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 			<div class="big-section">
-				<img class="podorys-img" src="/assets/img/a1-02-big.svg">
+				<img class="podorys-img smaller-podorys" src="/assets/img/a1-02-big.svg">
 				<a href="#">Stiahnuť pôdorys</a>
 			</div>
 		</div>

@@ -12,7 +12,7 @@
 </head>
 <body>
 
-	<header id="mainheader">
+<header id="mainheader">
 		<div id="mainbanner" class="announcement-banner">
 			<div class="container-banner">
 				<strong>Už v Predaji!</strong>
@@ -23,40 +23,86 @@
 			<a href="/">
 				<img src="/assets/img/main-logo.svg">
 			</a>
-			<nav>
-				<ul>
-					<li>
-						<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
-					</li>
-					<li>
-						<a href="/prenajom-naveky">Prenájom Naveky</a>
-						<span>Time Sharing</span>
-					</li>
-					<li>
-						<a href="/aktivity">Aktivity</a>
-					</li>
-					<li>
-						<a class="active" href="/o-projekte">O projekte</a>
-					</li>
-					<li>
-						<a href="/novinky">Novinky</a>
-					</li>
-					<li>
-						<a href="/galeria">Galéria</a>
-					</li>
-					<li>
-						<a href="/kontakt">Kontakt</a>
-					</li>
-				</ul>
-			</nav>
-			<div class="language-selector">
-				<span class="selected-language">SK</span>
-				<div class="another-laguages">
-					<a href="#">EN</a>
-					<a href="#">PL</a>
+			<div class="topNavigation">
+				<nav>
+					<ul>
+						<li>
+							<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+						</li>
+						<li>
+							<a href="/prenajom-naveky">Prenájom Naveky</a>
+							<span>Time Sharing</span>
+						</li>
+						<li>
+							<a href="/aktivity">Aktivity</a>
+						</li>
+						<li>
+							<a href="/o-projekte">O projekte</a>
+						</li>
+						<li>
+							<a href="/novinky">Novinky</a>
+						</li>
+						<li>
+							<a href="/galeria">Galéria</a>
+						</li>
+						<li>
+							<a href="/kontakt">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="languageSelector" class="language-selector">
+					<span id="currentLanguage" class="selected-language">SK</span>
+					<div class="another-laguages">
+						<a href="#">EN</a>
+						<a href="#">PL</a>
+					</div>
 				</div>
 			</div>
+
+			<div id="topBurger">
+				<span id="burgerThree"></span>
+				<span id="burgerTwo"></span>
+				<span id="burgerOne"></span>
+			</div>
 		</div>
+		<div id="mobileNavigation" class="topNavigation mobileNavigation">
+				<nav>
+					<ul>
+						<li>
+							<a href="/ponuka-nehnutelnosti">Ponuka Nehnuteľností</a>
+						</li>
+						<li>
+							<a href="/prenajom-naveky">Prenájom Naveky</a>
+							<span>Time Sharing</span>
+						</li>
+						<li>
+							<a href="/aktivity">Aktivity</a>
+						</li>
+						<li>
+							<a href="/o-projekte">O projekte</a>
+						</li>
+						<li>
+							<a href="/novinky">Novinky</a>
+						</li>
+						<li>
+							<a href="/galeria">Galéria</a>
+						</li>
+						<li>
+							<a href="/kontakt">Kontakt</a>
+						</li>
+					</ul>
+				</nav>
+				<div id="languageSelector" class="language-selector">
+					<span id="currentLanguage" class="selected-language">SK</span>
+					<div class="another-laguages">
+						<a href="#">EN</a>
+						<a href="#">PL</a>
+						<a href="#">EN</a>
+						<a href="#">PL</a>
+						<a href="#">EN</a>
+					</div>
+				</div>
+			</div>
 	</header>
 
 
@@ -133,9 +179,8 @@
 					</a>
 				</div>
 			</div>
-			<a href="/ponuka-nehnutelnosti">
-				<img class="main-img" src="/assets/img/o-projekte-main-podorys.png">
-			</a>
+			<img class="main-img" src="/assets/img/o-projekte-main-podorys.png">
+			<a class="cta-nehnutelnosti" href="/ponuka-nehnutelnosti">Ponuka nehnuteľnosti</a>
 		</section>
 
 		<section class="home-galeria">
@@ -173,7 +218,7 @@
 	<section class="home-aktivity">
 		<div class="container">
 			<div class="content">
-				<h2>Naše Aktivity</h2>
+				<h2>Aktivity</h2>
 				<img class="divider" src="/assets/img/home-about-element.svg">
 				<strong>Okolie nabité Rozprávkovými aktivitami</strong>
 				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
